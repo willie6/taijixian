@@ -1,0 +1,25 @@
+{
+  "name": "taijixian",
+  "private": true,
+  "dependencies": {
+    "zepto": "~1.1.4"
+  },
+  "version": "0.0.1",
+  "homepage": "https://github.com/willie6/baidu-BBS-home",
+  "description": "desc",
+  "main": "none",
+  "keywords": [
+    "line"
+  ],
+  "authors": [
+    "zz_1258623@163.com"
+  ],
+  "license": "none",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
