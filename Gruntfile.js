@@ -180,6 +180,20 @@ module.exports = function (grunt) {
       }
     },
 
+    bower: {
+      options: {
+        browsers: ['> 1%', 'last 2 versions', 'Firefox ESR', 'Opera 12.1']
+      },
+      dist: {
+        files: [{
+          expand: true,
+          cwd: '.tmp/styles/',
+          src: '{,*/}*.css',
+          dest: '.tmp/styles/'
+        }]
+      }
+    },
+
     // Automatically inject Bower components into the HTML file
     wiredep: {
       app: {
@@ -367,6 +381,8 @@ module.exports = function (grunt) {
     grunt.log.warn('The `server` task has been deprecated. Use `grunt serve` to start a server.');
     grunt.task.run([target ? ('serve:' + target) : 'serve']);
   });
+
+  grunt.registerTask('bower', ['bower']);
 
   grunt.registerTask('test', function (target) {
     if (target !== 'watch') {
