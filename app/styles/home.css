@@ -1,0 +1,557 @@
+html,
+body {
+  font-family: -apple-system-font, "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+html,
+body,
+div,
+p,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+input,
+select,
+button,
+textarea,
+iframe,
+table,
+th,
+td,
+img,
+a {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+img {
+  border: 0 none;
+  vertical-align: top;
+}
+body {
+  -webkit-backface-visibility: hidden;
+  -webkit-touch-callout: none;
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  text-size-adjust: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-overflow-scrolling: touch;
+  -webkit-user-drag: none;
+  background-color: white;
+  color: #fff;
+  word-wrap: break-word;
+  background: #2c8fca;
+  background-size: 100% auto;
+  margin: 0;
+  padding: 0;
+  line-height: 1.42857;
+}
+.wrap {
+  max-width: 640px;
+  min-width: 240px;
+  margin: 0 auto;
+  position: relative;
+}
+.price img {
+  width: 100%;
+  display: block;
+}
+.index-bodybg {
+  background: url(../images/run-1.png) no-repeat center center;
+  background-size: 254px auto;
+  height: 100%;
+}
+@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+  .entrypage-title {
+    background: url(../images/run-1.png) no-repeat center center;
+    background-size: 100% auto;
+  }
+  .entrypage-title2 {
+    background: url(../images/run-8.png) no-repeat center center;
+    background-size: 100% auto;
+  }
+}
+.entrypage-title {
+  background: url(../images/run-3.png) no-repeat center 0;
+  height: 32px;
+  background-size: auto 32px;
+  margin: 10px auto;
+}
+/**/
+
+.wrapin {
+  padding: 0 10px 10px;
+}
+.GameOptions {
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  background-color: #1b1b1b;
+  -webkit-box-shadow: 0 0 7px 1px rgba(20, 151, 225, .75), inset 0 0 5px rgba(4, 0, 0, .75);
+  -moz-box-shadow: 0 0 7px 1px rgba(20, 151, 225, .75), inset 0 0 5px rgba(4, 0, 0, .75);
+  box-shadow: 0 0 7px 1px rgba(20, 151, 225, .75), inset 0 0 5px rgba(4, 0, 0, .75);
+  border: solid 2px #0b3a64;
+}
+.GameOptions .divtext {
+  display: table-cell;
+  color: #fff;
+  display: -webkit-box;
+  height: 100%;
+}
+.GameOptions .divtext .imgbg {
+  width: 36px;
+  background: #05396d;
+  background: #05396d url(../images/run-4.png) no-repeat center center;
+  background-size: auto 62px;
+  min-height: 62px;
+  border-radius: 15px 0 0 0;
+  border-bottom: 1px solid #002a54;
+  border-left: 1px solid #125895;
+  border-top: 1px solid #125895;
+}
+.GameOptions .divtext .imgbg2n {
+  border-bottom: 0;
+  border-top: 1px solid #044d94;
+  border-radius: 0 0 0 15px;
+  background: #05396d url(../images/run-5.png) no-repeat center center;
+  background-size: auto 62px;
+  border-radius: 0 0 0 15px;
+  border-left: 1px solid #125895;
+  border-bottom: 1px solid #125895;
+  padding-bottom: 22px;
+}
+.GameOptions .divtext .righttext {
+  -webkit-box-flex: 1;
+  padding: 10px 15px;
+  border-bottom: 1px solid #0e0e0e;
+  font-size: 0.9rem;
+  border-radius: 0 15px 0 15px;
+  border-right: 1px solid #125895;
+  border-top: 1px solid #125895;
+}
+.GameOptions .divtext .righttext2 {
+  border-bottom: 0;
+  border-top: 1px solid #2c2c2c;
+  font-family: microsoft yahei;
+  border-radius: 0 0 15px 0;
+  border-right: 1px solid #125895;
+  border-bottom: 1px solid #125895;
+  padding-bottom: 22px;
+}
+.GameOptions .divtext .righttext2 span {
+  color: #f9eb07;
+}
+.GameOptions .divtext .righttext2 p {
+  font-size: 0.7rem;
+  padding-top: 5px;
+  font-family: -apple-system-font, "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+}
+.GameOptions .divtext .img2 {
+  background: url(../images/run-5.png) no-repeat center center;
+  background-size: auto 62px;
+  min-height: 62px;
+  display: block;
+  margin-top: 6px;
+}
+/*一*/
+
+.GameOptions .divtext .img1 {
+  background: url(../images/run-4.png) no-repeat center center;
+  background-size: auto 62px;
+  min-height: 62px;
+  display: block;
+  margin-top: 6px;
+}
+.GameOptions-bottombg {
+  background: url(../images/run-2.png) no-repeat center 0;
+  background-size: auto 72px;
+  min-height: 80px;
+  position: relative;
+  margin-top: -17px;
+}
+.PlayGame {
+  background: url(../images/run-7.png) no-repeat;
+  background-size: auto 85px;
+  min-height: 85px;
+  width: 100%;
+  border: 0;
+}
+.PlayGame-click {
+  background: url(../images/run-6.png) no-repeat;
+  background-size: auto 85px;
+}
+.entrypage-title2 {
+  background: url(../images/run-8.png) no-repeat center 0;
+  height: 32px;
+  background-size: auto 32px;
+  margin: 10px auto;
+}
+.entrypage-tablediv {
+  border-radius: 8px 8px;
+}
+.entrypage-table {
+  width: 100%;
+  border: 1px solid #0b3b65;
+  text-align: center;
+  border-radius: 8px;
+  border-collapse: collapse;
+}
+.entrypage-table td {
+  background: url(../images/run-9.png) repeat-x;
+  border: 1px solid #282221;
+  padding: 5px;
+  font-size: 0.8rem;
+  color: #fff;
+}
+.entrypage-table td:nth-child(odd) {
+  color: #f9eb07;
+}
+.entrypage-table th {
+  color: #00ff90;
+  background: #004181;
+  padding: 5px;
+  font-size: 0.9rem;
+  border: 1px solid #002a54;
+}
+/*口诀*/
+
+.formulas-earnings {
+  background: url(../images/run-11.png) no-repeat 0 center;
+  background-size: 100% 28px;
+  width: 100%;
+  min-height: 28px;
+  text-align: center;
+  font-family: microsoft yahei;
+  padding-bottom: 10px;
+}
+.formulas-earnings span {
+  color: #00ff90;
+}
+.formulas-hint {
+  text-align: center;
+  font-family: microsoft yahei;
+  padding: 25px 0;
+}
+.formulas-hint p {
+  font-family: 1.3rem;
+  padding-bottom: 15px;
+}
+.color-red {
+  color: #f72427;
+}
+.color-green {
+  color: #00ff90;
+}
+.color-yellow {
+  color: #ffea00;
+}
+.hint-btns,
+.hint-btns02 {
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  background-color: #f00;
+  -webkit-box-shadow: 0 3px #730000;
+  -moz-box-shadow: 0 3px #730000;
+  box-shadow: 0 3px #730000;
+  font-size: 1.2rem;
+  color: #fff;
+  padding: 7px 14px;
+  text-decoration: none;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+}
+.hint-btns02 {
+  width: auto;
+}
+.colose-btns {
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  background-color: #2584c3;
+  -webkit-box-shadow: 0 3px #00375b;
+  -moz-box-shadow: 0 3px #00375b;
+  box-shadow: 0 3px #00375b;
+  font-size: 1.2rem;
+  color: #fff;
+  text-align: center;
+  display: block;
+  width: 100%;
+  padding: 7px 14px;
+  text-decoration: none;
+}
+.hint-colose {
+  display: -webkit-box;
+  padding-bottom: 50px;
+}
+.hint-colose .p-hint {
+  -webkit-flex: 1;
+  width: 50%;
+}
+.pr-15 {
+  padding-right: 15px;
+}
+.pl-15 {
+  padding-left: 15px;
+}
+.formulas-bottoms {
+  background: url(../images/run-10.png) no-repeat 0 center;
+  background-size: 100% 73px;
+  width: 100%;
+  min-height: 73px;
+  margin-top: -25px;
+  position: relative;
+}
+.pt-30 {
+  padding-top: 30px;
+}
+.formulas-btn1 {
+  background: url(../images/run-12.png) no-repeat;
+  background-size: 100% 54px;
+  min-height: 54px;
+  width: 137px;
+  display: inline-block;
+  overflow: hidden;
+  text-indent: -999em;
+}
+.formulas-btn1click {
+  background: url(../images/run-13.png) no-repeat;
+  background-size: 100% 54px;
+  min-height: 54px;
+  width: 137px;
+  display: inline-block;
+  overflow: hidden;
+  text-indent: -999em;
+}
+.formulas-btn2 {
+  background: url(../images/run-16.png) no-repeat;
+  background-size: 100% 54px;
+  min-height: 54px;
+  width: 137px;
+  display: inline-block;
+  overflow: hidden;
+  text-indent: -999em;
+  margin-left: 20px;
+}
+.formulas-btn2click {
+  background: url(../images/run-17.png) no-repeat;
+  background-size: 100% 54px;
+  min-height: 54px;
+  width: 137px;
+  display: inline-block;
+  overflow: hidden;
+  text-indent: -999em;
+  margin-left: 20px;
+}
+.formulas-btn3 {
+  background: url(../images/run-14.png) no-repeat;
+  background-size: 100% 54px;
+  min-height: 54px;
+  width: 137px;
+  display: inline-block;
+  overflow: hidden;
+  text-indent: -999em;
+}
+.formulas-btn3click {
+  background: url(../images/run-15.png) no-repeat;
+  background-size: 100% 54px;
+  min-height: 54px;
+  width: 137px;
+  display: inline-block;
+  overflow: hidden;
+  text-indent: -999em;
+}
+.formulas-btn4 {
+  background: url(../images/run-18.png) no-repeat;
+  background-size: 100% 54px;
+  min-height: 54px;
+  width: 137px;
+  display: inline-block;
+  overflow: hidden;
+  text-indent: -999em;
+  margin-left: 20px;
+}
+.formulas-btn4click {
+  background: url(../images/run-19.png) no-repeat;
+  background-size: 100% 54px;
+  min-height: 54px;
+  width: 137px;
+  display: inline-block;
+  overflow: hidden;
+  text-indent: -999em;
+  margin-left: 20px;
+}
+.pt-20 {
+  padding-top: 20px;
+}
+/*倒计时*/
+
+.count-down {
+  background: url(../images/run-20.png) no-repeat center 0;
+  background-size: 100% 80px;
+  min-height: 80px;
+  margin: 25px 0;
+}
+.count-downgo {
+  background: url(../images/run-21.png) no-repeat center 0;
+  background-size: 161px 161px;
+  min-height: 161px;
+}
+.count-down3 {
+  background: url(../images/run-22.png) no-repeat center 0;
+  background-size: 161px 161px;
+  min-height: 161px;
+}
+.count-down2 {
+  background: url(../images/run-23.png) no-repeat center 0;
+  background-size: 161px 161px;
+  min-height: 161px;
+}
+.count-down1 {
+  background: url(../images/run-24.png) no-repeat center 0;
+  background-size: 161px 161px;
+  min-height: 161px;
+}
+.fn12 {
+  font-size: 1.2rem;
+}
+.fn11 {
+  font-size: 1.1rem;
+}
+.fn07 {
+  font-size: 0.7rem;
+}
+.pt-5 {
+  padding-top: 5px;
+}
+.textcenter {
+  text-align: center;
+}
+.pt-15 {
+  padding-top: 15px;
+}
+/*游戏结束*/
+
+.GameOver-text {
+  font-size: 0.8rem;
+  color: #121116;
+  text-align: center;
+}
+.GameOver-btn1 {
+  background: url(../images/run-34.png) no-repeat;
+  background-size: 100% 59px;
+  min-height: 59px;
+  text-indent: -999em;
+  width: 100%;
+  display: block;
+}
+.GameOver-btn1click {
+  background: url(../images/run-33.png) no-repeat;
+  background-size: 100% 59px;
+  min-height: 59px;
+  text-indent: -999em;
+  width: 100%;
+  display: block;
+}
+.GameOver-btn2 {
+  background: url(../images/run-32.png) no-repeat;
+  background-size: 100% 59px;
+  min-height: 59px;
+  text-indent: -999em;
+  width: 100%;
+  display: block;
+}
+.fn13 {
+  font-size: 1.3rem;
+  font-family: microsoft yahei;
+}
+.immediately-hint {
+  text-align: center;
+  font-family: microsoft yahei;
+  padding: 25px 0;
+}
+.immediately-table {
+  width: 100%;
+}
+.immediately-table td {
+  padding: 5px;
+  text-align: left;
+}
+.immediately-table .lefttext {
+  font-size: 0.75rem;
+  text-align: right;
+  width: 40%;
+}
+.immediately-table .input-width {
+  width: 100%;
+  background: #c9c9c9;
+  border-radius: 6px;
+  padding: 4px;
+}
+/**/
+
+.immediately-table .input-width02 {
+  width: 50%;
+  background: #c9c9c9;
+  border-radius: 6px;
+  padding: 4px;
+}
+.immediately-table .code-span {
+  font-size: 0.7rem;
+  background: #00ff90;
+  color: #000;
+  border-radius: 6px;
+  padding: 4px;
+  margin-left: 10px;
+}
+.hint-colose2 {
+  display: -webkit-box;
+}
+.hint-colose2 .p-hint {
+  -webkit-flex: 1;
+  width: 50%;
+}
+.flaunt-btns {
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  background-color: #00ff90;
+  -webkit-box-shadow: 0 6px #027845;
+  -moz-box-shadow: 0 6px #027845;
+  box-shadow: 0 6px #027845;
+  font-size: 1.2rem;
+  color: #fff;
+  text-align: center;
+  display: block;
+  width: 100%;
+  padding: 7px 14px;
+  text-decoration: none;
+}
