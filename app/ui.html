@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<script src="http://code.highcharts.com/adapters/standalone-framework.js"></script>
+		<script src="http://code.highcharts.com/highcharts.js"></script>
+	  <script>
+	    var l = function() {
+				  var chart1 = new Highcharts.Chart({
+	        chart: {
+	            renderTo: 'ty',
+	            type: 'bar'
+	        },
+	        title: {
+	            text: 'Fruit Consumption'
+	        },
+	        xAxis: {
+	            categories: ['Apples', 'Bananas', 'Oranges']
+	        },
+	        yAxis: {
+	            title: {
+	                text: 'Fruit eaten'
+	            }
+	        },
+	        series: [{
+	            name: 'Jane',
+	            data: [1, 0, 4]
+	        }, {
+	            name: 'John',
+	            data: [5, 7, 3]
+	        }]
+	    });
+		}
+	  </script>
+	</head>
+	<body onload="l();">
+		<div id="ty"></div>
+	</body>
+</html>
+
+file:///Users/willie6/workspace/taijixian/app/scripts/style.html

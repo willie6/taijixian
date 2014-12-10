@@ -78,8 +78,6 @@ body {
   min-width: 2.4rem;
   margin: 0 auto;
   position: relative;
-  font-size: 0.009rem;
-  display: none;
 }
 .price img {
   width: 100%;
@@ -251,21 +249,15 @@ body {
   min-height: 0.28rem;
   text-align: center;
   font-family: microsoft yahei;
-  /*padding-bottom: 0.1rem;*/
-  font-size: 0.2rem;
-  /*background-color: black;*/
-  margin-top: 0.16rem;
+  padding-bottom: 0.1rem;
 }
 .formulas-earnings span {
   color: #00ff90;
-  font-weight: 600;
 }
 .formulas-hint {
   text-align: center;
   font-family: microsoft yahei;
   padding: 0.25rem 0;
-  font-size: 0.16rem;
-  background-color: black;
 }
 .formulas-hint p {
   font-family: 0.013rem;
@@ -289,7 +281,7 @@ body {
   -webkit-box-shadow: 0 0.03rem #730000;
   -moz-box-shadow: 0 0.03rem #730000;
   box-shadow: 0 0.03rem #730000;
-  font-size: 0.192rem;
+  font-size: 0.012rem;
   color: #fff;
   padding: 0.07rem 0.14rem;
   text-decoration: none;
@@ -308,7 +300,7 @@ body {
   -webkit-box-shadow: 0 0.03rem #00375b;
   -moz-box-shadow: 0 0.03rem #00375b;
   box-shadow: 0 0.03rem #00375b;
-  font-size: 0.192rem;
+  font-size: 0.012rem;
   color: #fff;
   text-align: center;
   display: block;
@@ -319,26 +311,16 @@ body {
 .hint-colose {
   display: -webkit-box;
   padding-bottom: 0.5rem;
-  background-color: black;
 }
 .hint-colose .p-hint {
   -webkit-flex: 1;
   width: 50%;
 }
 .pr-15 {
-  display: inline-block;
-  float: left;
-  padding-right: 10px;
+  padding-right: 0.15rem;
 }
 .pl-15 {
-  display: inline-block;
-  float: right;
-  padding-left: 10px;
-}
-.hint-close-items { 
-  width: 90%;
-  height:60px; 
-  margin: 0 auto;
+  padding-left: 0.15rem;
 }
 .formulas-bottoms {
   background: url(../images/run-10.png) no-repeat 0 center;
@@ -394,7 +376,7 @@ body {
   background-size: 100% 0.54rem;
   min-height: 0.54rem;
   width: 1.37rem;
-  display: none;
+  display: inline-block;
   overflow: hidden;
   text-indent: -9.99em;
 }
@@ -412,7 +394,7 @@ body {
   background-size: 100% 0.54rem;
   min-height: 0.54rem;
   width: 1.37rem;
-  display: none;
+  display: inline-block;
   overflow: hidden;
   text-indent: -9.99em;
   margin-left: 0.2rem;
@@ -442,25 +424,21 @@ body {
   background: url(../images/run-21.png) no-repeat center 0;
   background-size: 1.61rem 1.61rem;
   min-height: 1.61rem;
-  display: none;
 }
 .count-down3 {
   background: url(../images/run-22.png) no-repeat center 0;
   background-size: 1.61rem 1.61rem;
   min-height: 1.61rem;
-  display: none;
 }
 .count-down2 {
   background: url(../images/run-23.png) no-repeat center 0;
   background-size: 1.61rem 1.61rem;
   min-height: 1.61rem;
-  display: none;
 }
 .count-down1 {
   background: url(../images/run-24.png) no-repeat center 0;
   background-size: 1.61rem 1.61rem;
   min-height: 1.61rem;
-  display: none;
 }
 .fn12 {
   font-size: 0.012rem;
@@ -576,8 +554,4 @@ body {
   width: 100%;
   padding: 0.07rem 0.14rem;
   text-decoration: none;
-}
-
-.bodyColor {
-  background-color: black
 }
