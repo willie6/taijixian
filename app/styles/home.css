@@ -3,6 +3,9 @@ body {
   font-family: -apple-system-font, "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+},
+html {
+  font-size: 0.16rem;
 }
 *,
 *:before,
