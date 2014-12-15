@@ -23,7 +23,107 @@ window.Resource = {
     src: $('#sell-font').src,
     width: 0.225 * unit * 0.5,
     height: 0.225 * unit * 0.5
-  }
+  },
+  gameSeries: [
+    {
+      tradedate: '20141119 11:00:00',
+      limit: 45,
+      guideOperation: {
+        '20141117 14:00:00': 'sell',
+        '20141117 17:00:00': 'buy',
+        '20141118 10:00:00': 'buy',
+        '20141118 17:00:00': 'sell'
+      }
+    }, {
+      tradedate: '20141113 01:00:00',
+      limit: 45,
+      guideOperation: {
+        '20141111 04:00:00': 'buy',
+        '20141111 13:00:00': 'buy',
+        '20141112 01:00:00': 'sell',
+        '20141112 04:00:00': 'sell'
+      }
+    }, {
+      tradedate: '20140918 07:00:00',
+      limit: 45,
+      guideOperation: {
+        '20140916 22:00:00': 'buy',
+        '20140916 10:00:00': 'sell',
+        '20140917 00:00:00': 'sell',
+        '20140917 16:00:00': 'buy'
+      }
+    }, {
+      tradedate: '20140802 04:00:00',
+      limit: 45,
+      guideOperation: {
+        '20140731 16:00:00': 'sell',
+        '20140731 22:00:00': 'buy',
+        '20140801 22:00:00': 'sell',
+        '20140802 03:00:00': 'buy'
+      }
+    }, {
+      tradedate: '20140709 19:00:00',
+      limit: 45,
+      guideOperation: {
+        '20140707 22:00:00': 'buy',
+        '20140708 20:00:00': 'sell',
+        '20140708 23:00:00': 'buy'
+      }
+    }, {
+      tradedate: '20141126 14:00:00',
+      limit: 45,
+      guideOperation: {
+        '20141124 22:00:00': 'sell',
+        '20141125 01:00:00': 'buy',
+        '20141125 17:00:00': 'sell',
+        '20141125 22:00:00': 'buy'
+      }
+    }, {
+      tradedate: '20141114 08:00:00',
+      limit: 45,
+      guideOperation: {
+        '20141112 21:00:00': 'buy',
+        '20141113 23:00:00': 'buy',
+        '20141113 19:00:00': 'sell'
+      }
+    }, {
+      tradedate: '20141028 14:00:00',
+      limit: 45,
+      guideOperation: {
+        '20141024 22:00:00': 'sell',
+        '20141024 23:00:00': 'buy',
+        '20141028 10:00:00': 'sell'
+      }
+    }, {
+      tradedate: '20141020 13:00:00',
+      limit: 45,
+      guideOperation: {
+        '20141016 21:00:00': 'buy',
+        '20141016 22:00:00': 'buy',
+        '20141017 00:00:00': 'sell',
+        '20141017 01:00:00': 'sell'
+      }
+    }, {
+      tradedate: '20140930 02:00:00',
+      limit: 45,
+      guideOperation: {
+        '20140926 10:00:00': 'sell',
+        '20140926 19:00:00': 'buy',
+        '20140927 04:00:00': 'sell',
+        '20140929 16:00:00': 'sell'
+      }
+    }, {
+      tradedate: '20140924 17:00:00',
+      limit: 45,
+      guideOperation: {
+        '20140923 00:00:00': 'sell',
+        '20140923 15:00:00': 'buy',
+        '20140923 17:00:00': 'sell',
+        '20140923 19:00:00': 'sell',
+        '20140923 21:00:00': 'buy'
+      }
+    }
+  ]
 };
 
 window.demoData = {
@@ -234,4 +334,4407 @@ window.demoData = {
       "x": 1415350800000
     }
   ]
+};
+
+window.ohlcDataCache = {
+  "20141119 11:00:00, 45": {
+    "datas": [
+      {
+        "open": 3210,
+        "index": 1,
+        "percent": "0.62%",
+        "tradedate": "20141117 10:00:00",
+        "updrop": 20,
+        "high": 3253,
+        "low": 3209,
+        "close": 3229
+      }, {
+        "open": 3230,
+        "index": 2,
+        "percent": "-0.53%",
+        "tradedate": "20141117 11:00:00",
+        "updrop": -17,
+        "high": 3233,
+        "low": 3212,
+        "close": 3212
+      }, {
+        "open": 3213,
+        "index": 3,
+        "percent": "-0.03%",
+        "tradedate": "20141117 12:00:00",
+        "updrop": -1,
+        "high": 3218,
+        "low": 3207,
+        "close": 3211
+      }, {
+        "open": 3212,
+        "index": 4,
+        "percent": "0.09%",
+        "tradedate": "20141117 13:00:00",
+        "updrop": 3,
+        "high": 3219,
+        "low": 3212,
+        "close": 3214
+      }, {
+        "open": 3215,
+        "index": 5,
+        "percent": "0.59%",
+        "tradedate": "20141117 14:00:00",
+        "updrop": 19,
+        "high": 3238,
+        "low": 3213,
+        "close": 3233
+      }, {
+        "open": 3234,
+        "index": 6,
+        "percent": "-0.40%",
+        "tradedate": "20141117 15:00:00",
+        "updrop": -13,
+        "high": 3235,
+        "low": 3216,
+        "close": 3220
+      }, {
+        "open": 3221,
+        "index": 7,
+        "percent": "-0.31%",
+        "tradedate": "20141117 16:00:00",
+        "updrop": -10,
+        "high": 3224,
+        "low": 3209,
+        "close": 3210
+      }, {
+        "open": 3209,
+        "index": 8,
+        "percent": "-0.44%",
+        "tradedate": "20141117 17:00:00",
+        "updrop": -14,
+        "high": 3210,
+        "low": 3181,
+        "close": 3196
+      }, {
+        "open": 3195,
+        "index": 9,
+        "percent": "-0.13%",
+        "tradedate": "20141117 18:00:00",
+        "updrop": -4,
+        "high": 3202,
+        "low": 3184,
+        "close": 3192
+      }, {
+        "open": 3191,
+        "index": 10,
+        "percent": "0.06%",
+        "tradedate": "20141117 19:00:00",
+        "updrop": 2,
+        "high": 3199,
+        "low": 3188,
+        "close": 3194
+      }, {
+        "open": 3193,
+        "index": 11,
+        "percent": "-0.09%",
+        "tradedate": "20141117 20:00:00",
+        "updrop": -3,
+        "high": 3220,
+        "low": 3185,
+        "close": 3191
+      }, {
+        "open": 3190,
+        "index": 12,
+        "percent": "-0.06%",
+        "tradedate": "20141117 21:00:00",
+        "updrop": -2,
+        "high": 3200,
+        "low": 3183,
+        "close": 3189
+      }, {
+        "open": 3188,
+        "index": 13,
+        "percent": "-0.28%",
+        "tradedate": "20141117 22:00:00",
+        "updrop": -9,
+        "high": 3202,
+        "low": 3174,
+        "close": 3180
+      }, {
+        "open": 3181,
+        "index": 14,
+        "percent": "-0.09%",
+        "tradedate": "20141117 23:00:00",
+        "updrop": -3,
+        "high": 3201,
+        "low": 3173,
+        "close": 3177
+      }, {
+        "open": 3176,
+        "index": 15,
+        "percent": "-0.06%",
+        "tradedate": "20141118 00:00:00",
+        "updrop": -2,
+        "high": 3192,
+        "low": 3167,
+        "close": 3175
+      }, {
+        "open": 3174,
+        "index": 16,
+        "percent": "0.09%",
+        "tradedate": "20141118 01:00:00",
+        "updrop": 3,
+        "high": 3187,
+        "low": 3170,
+        "close": 3178
+      }, {
+        "open": 3179,
+        "index": 17,
+        "percent": "-0.13%",
+        "tradedate": "20141118 02:00:00",
+        "updrop": -4,
+        "high": 3184,
+        "low": 3170,
+        "close": 3174
+      }, {
+        "open": 3175,
+        "index": 18,
+        "percent": "0.28%",
+        "tradedate": "20141118 03:00:00",
+        "updrop": 9,
+        "high": 3189,
+        "low": 3170,
+        "close": 3183
+      }, {
+        "open": 3182,
+        "index": 19,
+        "percent": "0.16%",
+        "tradedate": "20141118 04:00:00",
+        "updrop": 5,
+        "high": 3199,
+        "low": 3182,
+        "close": 3188
+      }, {
+        "open": 3191,
+        "index": 20,
+        "percent": "0.06%",
+        "tradedate": "20141118 08:00:00",
+        "updrop": 2,
+        "high": 3193,
+        "low": 3186,
+        "close": 3190
+      }, {
+        "open": 3189,
+        "index": 21,
+        "percent": "-0.13%",
+        "tradedate": "20141118 09:00:00",
+        "updrop": -4,
+        "high": 3189,
+        "low": 3179,
+        "close": 3186
+      }, {
+        "open": 3185,
+        "index": 22,
+        "percent": "-0.41%",
+        "tradedate": "20141118 10:00:00",
+        "updrop": -13,
+        "high": 3185,
+        "low": 3159,
+        "close": 3173
+      }, {
+        "open": 3172,
+        "index": 23,
+        "percent": "0.35%",
+        "tradedate": "20141118 11:00:00",
+        "updrop": 11,
+        "high": 3186,
+        "low": 3171,
+        "close": 3184
+      }, {
+        "open": 3185,
+        "index": 24,
+        "percent": "-0.03%",
+        "tradedate": "20141118 12:00:00",
+        "updrop": -1,
+        "high": 3190,
+        "low": 3180,
+        "close": 3183
+      }, {
+        "open": 3182,
+        "index": 25,
+        "percent": "0.09%",
+        "tradedate": "20141118 13:00:00",
+        "updrop": 3,
+        "high": 3188,
+        "low": 3180,
+        "close": 3186
+      }, {
+        "open": 3187,
+        "index": 26,
+        "percent": "0.25%",
+        "tradedate": "20141118 14:00:00",
+        "updrop": 8,
+        "high": 3200,
+        "low": 3185,
+        "close": 3194
+      }, {
+        "open": 3195,
+        "index": 27,
+        "percent": "0.00%",
+        "tradedate": "20141118 15:00:00",
+        "updrop": 0,
+        "high": 3195,
+        "low": 3188,
+        "close": 3194
+      }, {
+        "open": 3195,
+        "index": 28,
+        "percent": "0.66%",
+        "tradedate": "20141118 16:00:00",
+        "updrop": 21,
+        "high": 3222,
+        "low": 3189,
+        "close": 3215
+      }, {
+        "open": 3216,
+        "index": 29,
+        "percent": "0.44%",
+        "tradedate": "20141118 17:00:00",
+        "updrop": 14,
+        "high": 3235,
+        "low": 3213,
+        "close": 3229
+      }, {
+        "open": 3230,
+        "index": 30,
+        "percent": "0.03%",
+        "tradedate": "20141118 18:00:00",
+        "updrop": 1,
+        "high": 3232,
+        "low": 3218,
+        "close": 3230
+      }, {
+        "open": 3231,
+        "index": 31,
+        "percent": "-0.09%",
+        "tradedate": "20141118 19:00:00",
+        "updrop": -3,
+        "high": 3244,
+        "low": 3225,
+        "close": 3227
+      }, {
+        "open": 3228,
+        "index": 32,
+        "percent": "-0.19%",
+        "tradedate": "20141118 20:00:00",
+        "updrop": -6,
+        "high": 3235,
+        "low": 3218,
+        "close": 3221
+      }, {
+        "open": 3220,
+        "index": 33,
+        "percent": "-0.47%",
+        "tradedate": "20141118 21:00:00",
+        "updrop": -15,
+        "high": 3221,
+        "low": 3204,
+        "close": 3206
+      }, {
+        "open": 3205,
+        "index": 34,
+        "percent": "0.22%",
+        "tradedate": "20141118 22:00:00",
+        "updrop": 7,
+        "high": 3225,
+        "low": 3199,
+        "close": 3213
+      }, {
+        "open": 3212,
+        "index": 35,
+        "percent": "-0.47%",
+        "tradedate": "20141118 23:00:00",
+        "updrop": -15,
+        "high": 3215,
+        "low": 3194,
+        "close": 3198
+      }, {
+        "open": 3197,
+        "index": 36,
+        "percent": "0.09%",
+        "tradedate": "20141119 00:00:00",
+        "updrop": 3,
+        "high": 3211,
+        "low": 3189,
+        "close": 3201
+      }, {
+        "open": 3202,
+        "index": 37,
+        "percent": "-0.34%",
+        "tradedate": "20141119 01:00:00",
+        "updrop": -11,
+        "high": 3205,
+        "low": 3188,
+        "close": 3190
+      }, {
+        "open": 3191,
+        "index": 38,
+        "percent": "0.13%",
+        "tradedate": "20141119 02:00:00",
+        "updrop": 4,
+        "high": 3201,
+        "low": 3190,
+        "close": 3194
+      }, {
+        "open": 3193,
+        "index": 39,
+        "percent": "0.19%",
+        "tradedate": "20141119 03:00:00",
+        "updrop": 6,
+        "high": 3205,
+        "low": 3191,
+        "close": 3200
+      }, {
+        "open": 3199,
+        "index": 40,
+        "percent": "-0.22%",
+        "tradedate": "20141119 04:00:00",
+        "updrop": -7,
+        "high": 3202,
+        "low": 3190,
+        "close": 3193
+      }, {
+        "open": 3198,
+        "index": 41,
+        "percent": "-0.03%",
+        "tradedate": "20141119 08:00:00",
+        "updrop": -1,
+        "high": 3198,
+        "low": 3192,
+        "close": 3192
+      }, {
+        "open": 3193,
+        "index": 42,
+        "percent": "0.03%",
+        "tradedate": "20141119 09:00:00",
+        "updrop": 1,
+        "high": 3194,
+        "low": 3186,
+        "close": 3193
+      }, {
+        "open": 3192,
+        "index": 43,
+        "percent": "-0.13%",
+        "tradedate": "20141119 10:00:00",
+        "updrop": -4,
+        "high": 3201,
+        "low": 3184,
+        "close": 3189
+      }
+    ],
+    "info": {
+      "id": 1,
+      "count": 43,
+      "start": 1000,
+      "nickname": "XAGUSD",
+      "name": "现货白银",
+      "tradedate": "20141119 11:00:00"
+    }
+  },
+  "20140709 19:00:00,45": {
+    "datas": [
+      {
+        "open": 4150,
+        "index": 1,
+        "percent": "0.17%",
+        "tradedate": "20140707 20:00:00",
+        "updrop": 7,
+        "high": 4158,
+        "low": 4148,
+        "close": 4156
+      }, {
+        "open": 4157,
+        "index": 2,
+        "percent": "0.02%",
+        "tradedate": "20140707 21:00:00",
+        "updrop": 1,
+        "high": 4167,
+        "low": 4155,
+        "close": 4157
+      }, {
+        "open": 4158,
+        "index": 3,
+        "percent": "-0.58%",
+        "tradedate": "20140707 22:00:00",
+        "updrop": -24,
+        "high": 4158,
+        "low": 4132,
+        "close": 4133
+      }, {
+        "open": 4132,
+        "index": 4,
+        "percent": "0.58%",
+        "tradedate": "20140707 23:00:00",
+        "updrop": 24,
+        "high": 4160,
+        "low": 4129,
+        "close": 4157
+      }, {
+        "open": 4156,
+        "index": 5,
+        "percent": "-0.12%",
+        "tradedate": "20140708 00:00:00",
+        "updrop": -5,
+        "high": 4157,
+        "low": 4143,
+        "close": 4152
+      }, {
+        "open": 4153,
+        "index": 6,
+        "percent": "0.14%",
+        "tradedate": "20140708 01:00:00",
+        "updrop": 6,
+        "high": 4161,
+        "low": 4152,
+        "close": 4158
+      }, {
+        "open": 4159,
+        "index": 7,
+        "percent": "-0.02%",
+        "tradedate": "20140708 02:00:00",
+        "updrop": -1,
+        "high": 4163,
+        "low": 4154,
+        "close": 4157
+      }, {
+        "open": 4158,
+        "index": 8,
+        "percent": "0.00%",
+        "tradedate": "20140708 03:00:00",
+        "updrop": 0,
+        "high": 4162,
+        "low": 4155,
+        "close": 4157
+      }, {
+        "open": 4158,
+        "index": 9,
+        "percent": "0.19%",
+        "tradedate": "20140708 04:00:00",
+        "updrop": 8,
+        "high": 4166,
+        "low": 4157,
+        "close": 4165
+      }, {
+        "open": 4175,
+        "index": 10,
+        "percent": "0.07%",
+        "tradedate": "20140708 07:00:00",
+        "updrop": 3,
+        "high": 4176,
+        "low": 4167,
+        "close": 4168
+      }, {
+        "open": 4169,
+        "index": 11,
+        "percent": "-0.05%",
+        "tradedate": "20140708 08:00:00",
+        "updrop": -2,
+        "high": 4171,
+        "low": 4166,
+        "close": 4166
+      }, {
+        "open": 4167,
+        "index": 12,
+        "percent": "0.00%",
+        "tradedate": "20140708 09:00:00",
+        "updrop": 0,
+        "high": 4168,
+        "low": 4163,
+        "close": 4166
+      }, {
+        "open": 4167,
+        "index": 13,
+        "percent": "0.02%",
+        "tradedate": "20140708 10:00:00",
+        "updrop": 1,
+        "high": 4174,
+        "low": 4163,
+        "close": 4167
+      }, {
+        "open": 4166,
+        "index": 14,
+        "percent": "-0.19%",
+        "tradedate": "20140708 11:00:00",
+        "updrop": -8,
+        "high": 4167,
+        "low": 4158,
+        "close": 4159
+      }, {
+        "open": 4160,
+        "index": 15,
+        "percent": "0.00%",
+        "tradedate": "20140708 12:00:00",
+        "updrop": 0,
+        "high": 4164,
+        "low": 4157,
+        "close": 4159
+      }, {
+        "open": 4158,
+        "index": 16,
+        "percent": "0.00%",
+        "tradedate": "20140708 13:00:00",
+        "updrop": 0,
+        "high": 4161,
+        "low": 4156,
+        "close": 4159
+      }, {
+        "open": 4160,
+        "index": 17,
+        "percent": "0.02%",
+        "tradedate": "20140708 14:00:00",
+        "updrop": 1,
+        "high": 4163,
+        "low": 4158,
+        "close": 4160
+      }, {
+        "open": 4161,
+        "index": 18,
+        "percent": "0.19%",
+        "tradedate": "20140708 15:00:00",
+        "updrop": 8,
+        "high": 4174,
+        "low": 4160,
+        "close": 4168
+      }, {
+        "open": 4169,
+        "index": 19,
+        "percent": "-0.10%",
+        "tradedate": "20140708 16:00:00",
+        "updrop": -4,
+        "high": 4172,
+        "low": 4163,
+        "close": 4164
+      }, {
+        "open": 4165,
+        "index": 20,
+        "percent": "0.22%",
+        "tradedate": "20140708 17:00:00",
+        "updrop": 9,
+        "high": 4173,
+        "low": 4164,
+        "close": 4173
+      }, {
+        "open": 4172,
+        "index": 21,
+        "percent": "-0.10%",
+        "tradedate": "20140708 18:00:00",
+        "updrop": -4,
+        "high": 4173,
+        "low": 4163,
+        "close": 4169
+      }, {
+        "open": 4168,
+        "index": 22,
+        "percent": "0.17%",
+        "tradedate": "20140708 19:00:00",
+        "updrop": 7,
+        "high": 4177,
+        "low": 4167,
+        "close": 4176
+      }, {
+        "open": 4175,
+        "index": 23,
+        "percent": "0.36%",
+        "tradedate": "20140708 20:00:00",
+        "updrop": 15,
+        "high": 4199,
+        "low": 4172,
+        "close": 4191
+      }, {
+        "open": 4192,
+        "index": 24,
+        "percent": "-0.19%",
+        "tradedate": "20140708 21:00:00",
+        "updrop": -8,
+        "high": 4199,
+        "low": 4181,
+        "close": 4183
+      }, {
+        "open": 4182,
+        "index": 25,
+        "percent": "0.12%",
+        "tradedate": "20140708 22:00:00",
+        "updrop": 5,
+        "high": 4195,
+        "low": 4178,
+        "close": 4188
+      }, {
+        "open": 4189,
+        "index": 26,
+        "percent": "-0.79%",
+        "tradedate": "20140708 23:00:00",
+        "updrop": -33,
+        "high": 4189,
+        "low": 4144,
+        "close": 4155
+      }, {
+        "open": 4154,
+        "index": 27,
+        "percent": "-0.17%",
+        "tradedate": "20140709 00:00:00",
+        "updrop": -7,
+        "high": 4158,
+        "low": 4146,
+        "close": 4148
+      }, {
+        "open": 4147,
+        "index": 28,
+        "percent": "0.12%",
+        "tradedate": "20140709 01:00:00",
+        "updrop": 5,
+        "high": 4156,
+        "low": 4144,
+        "close": 4153
+      }, {
+        "open": 4152,
+        "index": 29,
+        "percent": "0.10%",
+        "tradedate": "20140709 02:00:00",
+        "updrop": 4,
+        "high": 4159,
+        "low": 4151,
+        "close": 4157
+      }, {
+        "open": 4156,
+        "index": 30,
+        "percent": "0.12%",
+        "tradedate": "20140709 03:00:00",
+        "updrop": 5,
+        "high": 4163,
+        "low": 4154,
+        "close": 4162
+      }, {
+        "open": 4163,
+        "index": 31,
+        "percent": "0.22%",
+        "tradedate": "20140709 04:00:00",
+        "updrop": 9,
+        "high": 4172,
+        "low": 4159,
+        "close": 4171
+      }, {
+        "open": 4169,
+        "index": 32,
+        "percent": "-0.07%",
+        "tradedate": "20140709 07:00:00",
+        "updrop": -3,
+        "high": 4171,
+        "low": 4166,
+        "close": 4168
+      }, {
+        "open": 4167,
+        "index": 33,
+        "percent": "-0.05%",
+        "tradedate": "20140709 08:00:00",
+        "updrop": -2,
+        "high": 4169,
+        "low": 4165,
+        "close": 4166
+      }, {
+        "open": 4167,
+        "index": 34,
+        "percent": "0.10%",
+        "tradedate": "20140709 09:00:00",
+        "updrop": 4,
+        "high": 4171,
+        "low": 4165,
+        "close": 4170
+      }, {
+        "open": 4169,
+        "index": 35,
+        "percent": "-0.14%",
+        "tradedate": "20140709 10:00:00",
+        "updrop": -6,
+        "high": 4174,
+        "low": 4163,
+        "close": 4164
+      }, {
+        "open": 4165,
+        "index": 36,
+        "percent": "0.14%",
+        "tradedate": "20140709 11:00:00",
+        "updrop": 6,
+        "high": 4175,
+        "low": 4164,
+        "close": 4170
+      }, {
+        "open": 4171,
+        "index": 37,
+        "percent": "0.26%",
+        "tradedate": "20140709 12:00:00",
+        "updrop": 11,
+        "high": 4182,
+        "low": 4169,
+        "close": 4181
+      }, {
+        "open": 4182,
+        "index": 38,
+        "percent": "0.05%",
+        "tradedate": "20140709 13:00:00",
+        "updrop": 2,
+        "high": 4187,
+        "low": 4176,
+        "close": 4183
+      }, {
+        "open": 4182,
+        "index": 39,
+        "percent": "-0.19%",
+        "tradedate": "20140709 14:00:00",
+        "updrop": -8,
+        "high": 4186,
+        "low": 4173,
+        "close": 4175
+      }, {
+        "open": 4176,
+        "index": 40,
+        "percent": "0.17%",
+        "tradedate": "20140709 15:00:00",
+        "updrop": 7,
+        "high": 4188,
+        "low": 4175,
+        "close": 4182
+      }, {
+        "open": 4183,
+        "index": 41,
+        "percent": "-0.14%",
+        "tradedate": "20140709 16:00:00",
+        "updrop": -6,
+        "high": 4184,
+        "low": 4171,
+        "close": 4176
+      }, {
+        "open": 4177,
+        "index": 42,
+        "percent": "0.10%",
+        "tradedate": "20140709 17:00:00",
+        "updrop": 4,
+        "high": 4181,
+        "low": 4174,
+        "close": 4180
+      }, {
+        "open": 4179,
+        "index": 43,
+        "percent": "-0.14%",
+        "tradedate": "20140709 18:00:00",
+        "updrop": -6,
+        "high": 4180,
+        "low": 4171,
+        "close": 4174
+      }
+    ],
+    "info": {
+      "id": 1,
+      "count": 43,
+      "start": 1000,
+      "nickname": "XAGUSD",
+      "name": "现货白银",
+      "tradedate": "20140709 19:00:00"
+    }
+  },
+  "20140802 04:00:00,45": {
+    "datas": [
+      {
+        "open": 4085,
+        "index": 1,
+        "percent": "0.02%",
+        "tradedate": "20140731 07:00:00",
+        "updrop": 1,
+        "high": 4088,
+        "low": 4083,
+        "close": 4087
+      }, {
+        "open": 4086,
+        "index": 2,
+        "percent": "-0.15%",
+        "tradedate": "20140731 08:00:00",
+        "updrop": -6,
+        "high": 4089,
+        "low": 4080,
+        "close": 4081
+      }, {
+        "open": 4080,
+        "index": 3,
+        "percent": "0.00%",
+        "tradedate": "20140731 09:00:00",
+        "updrop": 0,
+        "high": 4084,
+        "low": 4077,
+        "close": 4081
+      }, {
+        "open": 4080,
+        "index": 4,
+        "percent": "0.00%",
+        "tradedate": "20140731 10:00:00",
+        "updrop": 0,
+        "high": 4083,
+        "low": 4077,
+        "close": 4081
+      }, {
+        "open": 4080,
+        "index": 5,
+        "percent": "0.00%",
+        "tradedate": "20140731 11:00:00",
+        "updrop": 0,
+        "high": 4083,
+        "low": 4078,
+        "close": 4081
+      }, {
+        "open": 4080,
+        "index": 6,
+        "percent": "0.10%",
+        "tradedate": "20140731 12:00:00",
+        "updrop": 4,
+        "high": 4088,
+        "low": 4079,
+        "close": 4085
+      }, {
+        "open": 4084,
+        "index": 7,
+        "percent": "-0.05%",
+        "tradedate": "20140731 13:00:00",
+        "updrop": -2,
+        "high": 4086,
+        "low": 4080,
+        "close": 4083
+      }, {
+        "open": 4082,
+        "index": 8,
+        "percent": "-0.10%",
+        "tradedate": "20140731 14:00:00",
+        "updrop": -4,
+        "high": 4086,
+        "low": 4073,
+        "close": 4079
+      }, {
+        "open": 4078,
+        "index": 9,
+        "percent": "0.39%",
+        "tradedate": "20140731 15:00:00",
+        "updrop": 16,
+        "high": 4097,
+        "low": 4078,
+        "close": 4095
+      }, {
+        "open": 4094,
+        "index": 10,
+        "percent": "0.29%",
+        "tradedate": "20140731 16:00:00",
+        "updrop": 12,
+        "high": 4111,
+        "low": 4093,
+        "close": 4107
+      }, {
+        "open": 4108,
+        "index": 11,
+        "percent": "0.12%",
+        "tradedate": "20140731 17:00:00",
+        "updrop": 5,
+        "high": 4113,
+        "low": 4098,
+        "close": 4112
+      }, {
+        "open": 4113,
+        "index": 12,
+        "percent": "-0.15%",
+        "tradedate": "20140731 18:00:00",
+        "updrop": -6,
+        "high": 4113,
+        "low": 4101,
+        "close": 4106
+      }, {
+        "open": 4107,
+        "index": 13,
+        "percent": "-0.15%",
+        "tradedate": "20140731 19:00:00",
+        "updrop": -6,
+        "high": 4108,
+        "low": 4098,
+        "close": 4100
+      }, {
+        "open": 4101,
+        "index": 14,
+        "percent": "-0.07%",
+        "tradedate": "20140731 20:00:00",
+        "updrop": -3,
+        "high": 4107,
+        "low": 4093,
+        "close": 4097
+      }, {
+        "open": 4096,
+        "index": 15,
+        "percent": "-0.34%",
+        "tradedate": "20140731 21:00:00",
+        "updrop": -14,
+        "high": 4105,
+        "low": 4072,
+        "close": 4083
+      }, {
+        "open": 4082,
+        "index": 16,
+        "percent": "-0.49%",
+        "tradedate": "20140731 22:00:00",
+        "updrop": -20,
+        "high": 4085,
+        "low": 4059,
+        "close": 4063
+      }, {
+        "open": 4062,
+        "index": 17,
+        "percent": "-0.05%",
+        "tradedate": "20140731 23:00:00",
+        "updrop": -2,
+        "high": 4065,
+        "low": 4054,
+        "close": 4061
+      }, {
+        "open": 4060,
+        "index": 18,
+        "percent": "0.02%",
+        "tradedate": "20140801 00:00:00",
+        "updrop": 1,
+        "high": 4068,
+        "low": 4050,
+        "close": 4062
+      }, {
+        "open": 4061,
+        "index": 19,
+        "percent": "-0.30%",
+        "tradedate": "20140801 01:00:00",
+        "updrop": -12,
+        "high": 4071,
+        "low": 4047,
+        "close": 4050
+      }, {
+        "open": 4049,
+        "index": 20,
+        "percent": "-0.17%",
+        "tradedate": "20140801 02:00:00",
+        "updrop": -7,
+        "high": 4054,
+        "low": 4033,
+        "close": 4043
+      }, {
+        "open": 4044,
+        "index": 21,
+        "percent": "0.00%",
+        "tradedate": "20140801 03:00:00",
+        "updrop": 0,
+        "high": 4051,
+        "low": 4040,
+        "close": 4043
+      }, {
+        "open": 4044,
+        "index": 22,
+        "percent": "-0.07%",
+        "tradedate": "20140801 04:00:00",
+        "updrop": -3,
+        "high": 4059,
+        "low": 4040,
+        "close": 4040
+      }, {
+        "open": 4040,
+        "index": 23,
+        "percent": "-0.10%",
+        "tradedate": "20140801 07:00:00",
+        "updrop": -4,
+        "high": 4044,
+        "low": 4034,
+        "close": 4036
+      }, {
+        "open": 4035,
+        "index": 24,
+        "percent": "0.07%",
+        "tradedate": "20140801 08:00:00",
+        "updrop": 3,
+        "high": 4041,
+        "low": 4034,
+        "close": 4039
+      }, {
+        "open": 4040,
+        "index": 25,
+        "percent": "0.07%",
+        "tradedate": "20140801 09:00:00",
+        "updrop": 3,
+        "high": 4043,
+        "low": 4037,
+        "close": 4042
+      }, {
+        "open": 4043,
+        "index": 26,
+        "percent": "0.05%",
+        "tradedate": "20140801 10:00:00",
+        "updrop": 2,
+        "high": 4046,
+        "low": 4038,
+        "close": 4044
+      }, {
+        "open": 4043,
+        "index": 27,
+        "percent": "0.02%",
+        "tradedate": "20140801 11:00:00",
+        "updrop": 1,
+        "high": 4049,
+        "low": 4043,
+        "close": 4045
+      }, {
+        "open": 4046,
+        "index": 28,
+        "percent": "0.02%",
+        "tradedate": "20140801 12:00:00",
+        "updrop": 1,
+        "high": 4046,
+        "low": 4043,
+        "close": 4046
+      }, {
+        "open": 4045,
+        "index": 29,
+        "percent": "-0.17%",
+        "tradedate": "20140801 13:00:00",
+        "updrop": -7,
+        "high": 4046,
+        "low": 4037,
+        "close": 4039
+      }, {
+        "open": 4038,
+        "index": 30,
+        "percent": "0.22%",
+        "tradedate": "20140801 14:00:00",
+        "updrop": 9,
+        "high": 4050,
+        "low": 4036,
+        "close": 4048
+      }, {
+        "open": 4047,
+        "index": 31,
+        "percent": "-0.07%",
+        "tradedate": "20140801 15:00:00",
+        "updrop": -3,
+        "high": 4051,
+        "low": 4043,
+        "close": 4045
+      }, {
+        "open": 4044,
+        "index": 32,
+        "percent": "0.05%",
+        "tradedate": "20140801 16:00:00",
+        "updrop": 2,
+        "high": 4054,
+        "low": 4039,
+        "close": 4047
+      }, {
+        "open": 4046,
+        "index": 33,
+        "percent": "-0.17%",
+        "tradedate": "20140801 17:00:00",
+        "updrop": -7,
+        "high": 4048,
+        "low": 4037,
+        "close": 4040
+      }, {
+        "open": 4041,
+        "index": 34,
+        "percent": "-0.17%",
+        "tradedate": "20140801 18:00:00",
+        "updrop": -7,
+        "high": 4045,
+        "low": 4027,
+        "close": 4033
+      }, {
+        "open": 4034,
+        "index": 35,
+        "percent": "0.07%",
+        "tradedate": "20140801 19:00:00",
+        "updrop": 3,
+        "high": 4042,
+        "low": 4031,
+        "close": 4036
+      }, {
+        "open": 4037,
+        "index": 36,
+        "percent": "0.07%",
+        "tradedate": "20140801 20:00:00",
+        "updrop": 3,
+        "high": 4040,
+        "low": 4026,
+        "close": 4039
+      }, {
+        "open": 4040,
+        "index": 37,
+        "percent": "0.32%",
+        "tradedate": "20140801 21:00:00",
+        "updrop": 13,
+        "high": 4057,
+        "low": 4023,
+        "close": 4052
+      }, {
+        "open": 4053,
+        "index": 38,
+        "percent": "0.39%",
+        "tradedate": "20140801 22:00:00",
+        "updrop": 16,
+        "high": 4075,
+        "low": 4048,
+        "close": 4068
+      }, {
+        "open": 4067,
+        "index": 39,
+        "percent": "-0.29%",
+        "tradedate": "20140801 23:00:00",
+        "updrop": -12,
+        "high": 4069,
+        "low": 4052,
+        "close": 4056
+      }, {
+        "open": 4057,
+        "index": 40,
+        "percent": "-0.27%",
+        "tradedate": "20140802 00:00:00",
+        "updrop": -11,
+        "high": 4060,
+        "low": 4034,
+        "close": 4045
+      }, {
+        "open": 4046,
+        "index": 41,
+        "percent": "-0.12%",
+        "tradedate": "20140802 01:00:00",
+        "updrop": -5,
+        "high": 4050,
+        "low": 4038,
+        "close": 4040
+      }, {
+        "open": 4039,
+        "index": 42,
+        "percent": "-0.07%",
+        "tradedate": "20140802 02:00:00",
+        "updrop": -3,
+        "high": 4043,
+        "low": 4032,
+        "close": 4037
+      }, {
+        "open": 4038,
+        "index": 43,
+        "percent": "-0.37%",
+        "tradedate": "20140802 03:00:00",
+        "updrop": -15,
+        "high": 4038,
+        "low": 4018,
+        "close": 4022
+      }
+    ],
+    "info": {
+      "id": 1,
+      "count": 43,
+      "start": 1000,
+      "nickname": "XAGUSD",
+      "name": "现货白银",
+      "tradedate": "20140802 04:00:00"
+    }
+  },
+  "20141113 01:00:00,45": {
+    "datas": [
+      {
+        "open": 3074,
+        "index": 1,
+        "percent": "0.59%",
+        "tradedate": "20141111 02:00:00",
+        "updrop": 18,
+        "high": 3095,
+        "low": 3073,
+        "close": 3093
+      }, {
+        "open": 3092,
+        "index": 2,
+        "percent": "-0.13%",
+        "tradedate": "20141111 03:00:00",
+        "updrop": -4,
+        "high": 3099,
+        "low": 3086,
+        "close": 3089
+      }, {
+        "open": 3088,
+        "index": 3,
+        "percent": "-0.62%",
+        "tradedate": "20141111 04:00:00",
+        "updrop": -19,
+        "high": 3090,
+        "low": 3063,
+        "close": 3070
+      }, {
+        "open": 3084,
+        "index": 4,
+        "percent": "0.46%",
+        "tradedate": "20141111 07:00:00",
+        "updrop": 14,
+        "high": 3084,
+        "low": 3084,
+        "close": 3084
+      }, {
+        "open": 3084,
+        "index": 5,
+        "percent": "0.26%",
+        "tradedate": "20141111 08:00:00",
+        "updrop": 8,
+        "high": 3092,
+        "low": 3077,
+        "close": 3092
+      }, {
+        "open": 3091,
+        "index": 6,
+        "percent": "-0.06%",
+        "tradedate": "20141111 09:00:00",
+        "updrop": -2,
+        "high": 3094,
+        "low": 3082,
+        "close": 3090
+      }, {
+        "open": 3089,
+        "index": 7,
+        "percent": "0.06%",
+        "tradedate": "20141111 10:00:00",
+        "updrop": 2,
+        "high": 3104,
+        "low": 3089,
+        "close": 3092
+      }, {
+        "open": 3091,
+        "index": 8,
+        "percent": "-0.29%",
+        "tradedate": "20141111 11:00:00",
+        "updrop": -9,
+        "high": 3094,
+        "low": 3079,
+        "close": 3083
+      }, {
+        "open": 3082,
+        "index": 9,
+        "percent": "-0.39%",
+        "tradedate": "20141111 12:00:00",
+        "updrop": -12,
+        "high": 3088,
+        "low": 3071,
+        "close": 3071
+      }, {
+        "open": 3070,
+        "index": 10,
+        "percent": "-0.33%",
+        "tradedate": "20141111 13:00:00",
+        "updrop": -10,
+        "high": 3076,
+        "low": 3059,
+        "close": 3061
+      }, {
+        "open": 3060,
+        "index": 11,
+        "percent": "0.52%",
+        "tradedate": "20141111 14:00:00",
+        "updrop": 16,
+        "high": 3080,
+        "low": 3055,
+        "close": 3077
+      }, {
+        "open": 3078,
+        "index": 12,
+        "percent": "-0.26%",
+        "tradedate": "20141111 15:00:00",
+        "updrop": -8,
+        "high": 3081,
+        "low": 3066,
+        "close": 3069
+      }, {
+        "open": 3070,
+        "index": 13,
+        "percent": "0.20%",
+        "tradedate": "20141111 16:00:00",
+        "updrop": 6,
+        "high": 3084,
+        "low": 3067,
+        "close": 3075
+      }, {
+        "open": 3076,
+        "index": 14,
+        "percent": "-0.39%",
+        "tradedate": "20141111 17:00:00",
+        "updrop": -12,
+        "high": 3079,
+        "low": 3055,
+        "close": 3063
+      }, {
+        "open": 3064,
+        "index": 15,
+        "percent": "0.26%",
+        "tradedate": "20141111 18:00:00",
+        "updrop": 8,
+        "high": 3079,
+        "low": 3061,
+        "close": 3071
+      }, {
+        "open": 3072,
+        "index": 16,
+        "percent": "0.10%",
+        "tradedate": "20141111 19:00:00",
+        "updrop": 3,
+        "high": 3079,
+        "low": 3066,
+        "close": 3074
+      }, {
+        "open": 3075,
+        "index": 17,
+        "percent": "0.29%",
+        "tradedate": "20141111 20:00:00",
+        "updrop": 9,
+        "high": 3094,
+        "low": 3074,
+        "close": 3083
+      }, {
+        "open": 3084,
+        "index": 18,
+        "percent": "-0.19%",
+        "tradedate": "20141111 21:00:00",
+        "updrop": -6,
+        "high": 3088,
+        "low": 3076,
+        "close": 3077
+      }, {
+        "open": 3076,
+        "index": 19,
+        "percent": "0.06%",
+        "tradedate": "20141111 22:00:00",
+        "updrop": 2,
+        "high": 3087,
+        "low": 3073,
+        "close": 3079
+      }, {
+        "open": 3078,
+        "index": 20,
+        "percent": "0.03%",
+        "tradedate": "20141111 23:00:00",
+        "updrop": 1,
+        "high": 3084,
+        "low": 3074,
+        "close": 3080
+      }, {
+        "open": 3081,
+        "index": 21,
+        "percent": "-0.42%",
+        "tradedate": "20141112 00:00:00",
+        "updrop": -13,
+        "high": 3081,
+        "low": 3064,
+        "close": 3067
+      }, {
+        "open": 3066,
+        "index": 22,
+        "percent": "0.98%",
+        "tradedate": "20141112 01:00:00",
+        "updrop": 30,
+        "high": 3109,
+        "low": 3065,
+        "close": 3097
+      }, {
+        "open": 3098,
+        "index": 23,
+        "percent": "0.19%",
+        "tradedate": "20141112 02:00:00",
+        "updrop": 6,
+        "high": 3113,
+        "low": 3093,
+        "close": 3103
+      }, {
+        "open": 3104,
+        "index": 24,
+        "percent": "0.19%",
+        "tradedate": "20141112 03:00:00",
+        "updrop": 6,
+        "high": 3117,
+        "low": 3097,
+        "close": 3109
+      }, {
+        "open": 3110,
+        "index": 25,
+        "percent": "0.45%",
+        "tradedate": "20141112 04:00:00",
+        "updrop": 14,
+        "high": 3139,
+        "low": 3109,
+        "close": 3123
+      }, {
+        "open": 3106,
+        "index": 26,
+        "percent": "-0.54%",
+        "tradedate": "20141112 07:00:00",
+        "updrop": -17,
+        "high": 3106,
+        "low": 3106,
+        "close": 3106
+      }, {
+        "open": 3106,
+        "index": 27,
+        "percent": "-0.06%",
+        "tradedate": "20141112 08:00:00",
+        "updrop": -2,
+        "high": 3107,
+        "low": 3093,
+        "close": 3104
+      }, {
+        "open": 3105,
+        "index": 28,
+        "percent": "0.03%",
+        "tradedate": "20141112 09:00:00",
+        "updrop": 1,
+        "high": 3114,
+        "low": 3101,
+        "close": 3105
+      }, {
+        "open": 3106,
+        "index": 29,
+        "percent": "-0.10%",
+        "tradedate": "20141112 10:00:00",
+        "updrop": -3,
+        "high": 3106,
+        "low": 3095,
+        "close": 3102
+      }, {
+        "open": 3101,
+        "index": 30,
+        "percent": "-0.03%",
+        "tradedate": "20141112 11:00:00",
+        "updrop": -1,
+        "high": 3113,
+        "low": 3100,
+        "close": 3101
+      }, {
+        "open": 3100,
+        "index": 31,
+        "percent": "-0.13%",
+        "tradedate": "20141112 12:00:00",
+        "updrop": -4,
+        "high": 3104,
+        "low": 3096,
+        "close": 3097
+      }, {
+        "open": 3096,
+        "index": 32,
+        "percent": "0.26%",
+        "tradedate": "20141112 13:00:00",
+        "updrop": 8,
+        "high": 3107,
+        "low": 3095,
+        "close": 3105
+      }, {
+        "open": 3106,
+        "index": 33,
+        "percent": "0.16%",
+        "tradedate": "20141112 14:00:00",
+        "updrop": 5,
+        "high": 3110,
+        "low": 3103,
+        "close": 3110
+      }, {
+        "open": 3111,
+        "index": 34,
+        "percent": "-0.10%",
+        "tradedate": "20141112 15:00:00",
+        "updrop": -3,
+        "high": 3118,
+        "low": 3105,
+        "close": 3107
+      }, {
+        "open": 3106,
+        "index": 35,
+        "percent": "-0.13%",
+        "tradedate": "20141112 16:00:00",
+        "updrop": -4,
+        "high": 3112,
+        "low": 3103,
+        "close": 3103
+      }, {
+        "open": 3102,
+        "index": 36,
+        "percent": "-0.03%",
+        "tradedate": "20141112 17:00:00",
+        "updrop": -1,
+        "high": 3102,
+        "low": 3092,
+        "close": 3102
+      }, {
+        "open": 3101,
+        "index": 37,
+        "percent": "-0.26%",
+        "tradedate": "20141112 18:00:00",
+        "updrop": -8,
+        "high": 3102,
+        "low": 3089,
+        "close": 3094
+      }, {
+        "open": 3093,
+        "index": 38,
+        "percent": "-0.03%",
+        "tradedate": "20141112 19:00:00",
+        "updrop": -1,
+        "high": 3100,
+        "low": 3092,
+        "close": 3093
+      }, {
+        "open": 3092,
+        "index": 39,
+        "percent": "-0.26%",
+        "tradedate": "20141112 20:00:00",
+        "updrop": -8,
+        "high": 3101,
+        "low": 3082,
+        "close": 3085
+      }, {
+        "open": 3084,
+        "index": 40,
+        "percent": "-0.19%",
+        "tradedate": "20141112 21:00:00",
+        "updrop": -6,
+        "high": 3088,
+        "low": 3076,
+        "close": 3079
+      }, {
+        "open": 3078,
+        "index": 41,
+        "percent": "0.26%",
+        "tradedate": "20141112 22:00:00",
+        "updrop": 8,
+        "high": 3099,
+        "low": 3078,
+        "close": 3087
+      }, {
+        "open": 3088,
+        "index": 42,
+        "percent": "0.29%",
+        "tradedate": "20141112 23:00:00",
+        "updrop": 9,
+        "high": 3101,
+        "low": 3079,
+        "close": 3096
+      }, {
+        "open": 3097,
+        "index": 43,
+        "percent": "-0.06%",
+        "tradedate": "20141113 00:00:00",
+        "updrop": -2,
+        "high": 3103,
+        "low": 3090,
+        "close": 3094
+      }
+    ],
+    "info": {
+      "id": 1,
+      "count": 43,
+      "start": 1000,
+      "nickname": "XAGUSD",
+      "name": "现货白银",
+      "tradedate": "20141113 01:00:00"
+    }
+  },
+  "20140918 07:00:00,45": {
+    "datas": [
+      {
+        "open": 3687,
+        "index": 1,
+        "percent": "-0.03%",
+        "tradedate": "20140916 08:00:00",
+        "updrop": -1,
+        "high": 3689,
+        "low": 3685,
+        "close": 3687
+      }, {
+        "open": 3686,
+        "index": 2,
+        "percent": "0.00%",
+        "tradedate": "20140916 09:00:00",
+        "updrop": 0,
+        "high": 3688,
+        "low": 3684,
+        "close": 3687
+      }, {
+        "open": 3686,
+        "index": 3,
+        "percent": "0.57%",
+        "tradedate": "20140916 10:00:00",
+        "updrop": 21,
+        "high": 3714,
+        "low": 3686,
+        "close": 3708
+      }, {
+        "open": 3709,
+        "index": 4,
+        "percent": "-0.22%",
+        "tradedate": "20140916 11:00:00",
+        "updrop": -8,
+        "high": 3709,
+        "low": 3700,
+        "close": 3700
+      }, {
+        "open": 3701,
+        "index": 5,
+        "percent": "0.11%",
+        "tradedate": "20140916 12:00:00",
+        "updrop": 4,
+        "high": 3705,
+        "low": 3699,
+        "close": 3704
+      }, {
+        "open": 3705,
+        "index": 6,
+        "percent": "-0.13%",
+        "tradedate": "20140916 13:00:00",
+        "updrop": -5,
+        "high": 3705,
+        "low": 3698,
+        "close": 3699
+      }, {
+        "open": 3700,
+        "index": 7,
+        "percent": "0.03%",
+        "tradedate": "20140916 14:00:00",
+        "updrop": 1,
+        "high": 3708,
+        "low": 3699,
+        "close": 3700
+      }, {
+        "open": 3699,
+        "index": 8,
+        "percent": "-0.16%",
+        "tradedate": "20140916 15:00:00",
+        "updrop": -6,
+        "high": 3699,
+        "low": 3694,
+        "close": 3694
+      }, {
+        "open": 3695,
+        "index": 9,
+        "percent": "0.14%",
+        "tradedate": "20140916 16:00:00",
+        "updrop": 5,
+        "high": 3706,
+        "low": 3692,
+        "close": 3699
+      }, {
+        "open": 3701,
+        "index": 10,
+        "percent": "0.24%",
+        "tradedate": "20140916 17:00:00",
+        "updrop": 9,
+        "high": 3714,
+        "low": 3696,
+        "close": 3708
+      }, {
+        "open": 3709,
+        "index": 11,
+        "percent": "0.03%",
+        "tradedate": "20140916 18:00:00",
+        "updrop": 1,
+        "high": 3712,
+        "low": 3703,
+        "close": 3709
+      }, {
+        "open": 3708,
+        "index": 12,
+        "percent": "-0.08%",
+        "tradedate": "20140916 19:00:00",
+        "updrop": -3,
+        "high": 3726,
+        "low": 3706,
+        "close": 3706
+      }, {
+        "open": 3707,
+        "index": 13,
+        "percent": "-0.08%",
+        "tradedate": "20140916 20:00:00",
+        "updrop": -3,
+        "high": 3708,
+        "low": 3696,
+        "close": 3703
+      }, {
+        "open": 3704,
+        "index": 14,
+        "percent": "-0.22%",
+        "tradedate": "20140916 21:00:00",
+        "updrop": -8,
+        "high": 3705,
+        "low": 3692,
+        "close": 3695
+      }, {
+        "open": 3694,
+        "index": 15,
+        "percent": "-0.27%",
+        "tradedate": "20140916 22:00:00",
+        "updrop": -10,
+        "high": 3708,
+        "low": 3682,
+        "close": 3685
+      }, {
+        "open": 3684,
+        "index": 16,
+        "percent": "0.14%",
+        "tradedate": "20140916 23:00:00",
+        "updrop": 5,
+        "high": 3695,
+        "low": 3678,
+        "close": 3690
+      }, {
+        "open": 3689,
+        "index": 17,
+        "percent": "0.81%",
+        "tradedate": "20140917 00:00:00",
+        "updrop": 30,
+        "high": 3723,
+        "low": 3687,
+        "close": 3720
+      }, {
+        "open": 3721,
+        "index": 18,
+        "percent": "-0.19%",
+        "tradedate": "20140917 01:00:00",
+        "updrop": -7,
+        "high": 3732,
+        "low": 3711,
+        "close": 3713
+      }, {
+        "open": 3714,
+        "index": 19,
+        "percent": "-0.19%",
+        "tradedate": "20140917 02:00:00",
+        "updrop": -7,
+        "high": 3714,
+        "low": 3697,
+        "close": 3706
+      }, {
+        "open": 3705,
+        "index": 20,
+        "percent": "-0.03%",
+        "tradedate": "20140917 03:00:00",
+        "updrop": -1,
+        "high": 3708,
+        "low": 3700,
+        "close": 3705
+      }, {
+        "open": 3706,
+        "index": 21,
+        "percent": "-0.19%",
+        "tradedate": "20140917 04:00:00",
+        "updrop": -7,
+        "high": 3707,
+        "low": 3697,
+        "close": 3698
+      }, {
+        "open": 3696,
+        "index": 22,
+        "percent": "0.03%",
+        "tradedate": "20140917 07:00:00",
+        "updrop": 1,
+        "high": 3700,
+        "low": 3693,
+        "close": 3699
+      }, {
+        "open": 3700,
+        "index": 23,
+        "percent": "0.03%",
+        "tradedate": "20140917 08:00:00",
+        "updrop": 1,
+        "high": 3704,
+        "low": 3697,
+        "close": 3700
+      }, {
+        "open": 3701,
+        "index": 24,
+        "percent": "0.05%",
+        "tradedate": "20140917 09:00:00",
+        "updrop": 2,
+        "high": 3704,
+        "low": 3695,
+        "close": 3702
+      }, {
+        "open": 3701,
+        "index": 25,
+        "percent": "-0.05%",
+        "tradedate": "20140917 10:00:00",
+        "updrop": -2,
+        "high": 3704,
+        "low": 3696,
+        "close": 3700
+      }, {
+        "open": 3701,
+        "index": 26,
+        "percent": "0.00%",
+        "tradedate": "20140917 11:00:00",
+        "updrop": 0,
+        "high": 3706,
+        "low": 3698,
+        "close": 3700
+      }, {
+        "open": 3701,
+        "index": 27,
+        "percent": "0.08%",
+        "tradedate": "20140917 12:00:00",
+        "updrop": 3,
+        "high": 3706,
+        "low": 3699,
+        "close": 3703
+      }, {
+        "open": 3702,
+        "index": 28,
+        "percent": "-0.05%",
+        "tradedate": "20140917 13:00:00",
+        "updrop": -2,
+        "high": 3704,
+        "low": 3697,
+        "close": 3701
+      }, {
+        "open": 3698,
+        "index": 29,
+        "percent": "0.11%",
+        "tradedate": "20140917 14:00:00",
+        "updrop": 4,
+        "high": 3706,
+        "low": 3696,
+        "close": 3705
+      }, {
+        "open": 3704,
+        "index": 30,
+        "percent": "0.00%",
+        "tradedate": "20140917 15:00:00",
+        "updrop": 0,
+        "high": 3708,
+        "low": 3698,
+        "close": 3705
+      }, {
+        "open": 3704,
+        "index": 31,
+        "percent": "-0.57%",
+        "tradedate": "20140917 16:00:00",
+        "updrop": -21,
+        "high": 3704,
+        "low": 3683,
+        "close": 3684
+      }, {
+        "open": 3685,
+        "index": 32,
+        "percent": "0.08%",
+        "tradedate": "20140917 17:00:00",
+        "updrop": 3,
+        "high": 3689,
+        "low": 3680,
+        "close": 3687
+      }, {
+        "open": 3686,
+        "index": 33,
+        "percent": "-0.05%",
+        "tradedate": "20140917 18:00:00",
+        "updrop": -2,
+        "high": 3687,
+        "low": 3678,
+        "close": 3685
+      }, {
+        "open": 3684,
+        "index": 34,
+        "percent": "0.22%",
+        "tradedate": "20140917 19:00:00",
+        "updrop": 8,
+        "high": 3693,
+        "low": 3684,
+        "close": 3693
+      }, {
+        "open": 3694,
+        "index": 35,
+        "percent": "-0.24%",
+        "tradedate": "20140917 20:00:00",
+        "updrop": -9,
+        "high": 3694,
+        "low": 3683,
+        "close": 3684
+      }, {
+        "open": 3683,
+        "index": 36,
+        "percent": "0.16%",
+        "tradedate": "20140917 21:00:00",
+        "updrop": 6,
+        "high": 3700,
+        "low": 3679,
+        "close": 3690
+      }, {
+        "open": 3691,
+        "index": 37,
+        "percent": "0.05%",
+        "tradedate": "20140917 22:00:00",
+        "updrop": 2,
+        "high": 3697,
+        "low": 3686,
+        "close": 3692
+      }, {
+        "open": 3691,
+        "index": 38,
+        "percent": "-0.03%",
+        "tradedate": "20140917 23:00:00",
+        "updrop": -1,
+        "high": 3698,
+        "low": 3685,
+        "close": 3691
+      }, {
+        "open": 3690,
+        "index": 39,
+        "percent": "0.00%",
+        "tradedate": "20140918 00:00:00",
+        "updrop": 0,
+        "high": 3696,
+        "low": 3688,
+        "close": 3691
+      }, {
+        "open": 3690,
+        "index": 40,
+        "percent": "0.30%",
+        "tradedate": "20140918 01:00:00",
+        "updrop": 11,
+        "high": 3705,
+        "low": 3689,
+        "close": 3702
+      }, {
+        "open": 3701,
+        "index": 41,
+        "percent": "0.08%",
+        "tradedate": "20140918 02:00:00",
+        "updrop": 3,
+        "high": 3706,
+        "low": 3694,
+        "close": 3705
+      }, {
+        "open": 3704,
+        "index": 42,
+        "percent": "-0.67%",
+        "tradedate": "20140918 03:00:00",
+        "updrop": -25,
+        "high": 3712,
+        "low": 3679,
+        "close": 3680
+      }, {
+        "open": 3679,
+        "index": 43,
+        "percent": "-0.65%",
+        "tradedate": "20140918 04:00:00",
+        "updrop": -24,
+        "high": 3691,
+        "low": 3655,
+        "close": 3656
+      }
+    ],
+    "info": {
+      "id": 1,
+      "count": 43,
+      "start": 1000,
+      "nickname": "XAGUSD",
+      "name": "现货白银",
+      "tradedate": "20140918 07:00:00"
+    }
+  },
+  "20141126 14:00:00,45": {
+    "datas": [
+      {
+        "open": 3241,
+        "index": 1,
+        "percent": "-0.09%",
+        "tradedate": "20141124 13:00:00",
+        "updrop": -3,
+        "high": 3245,
+        "low": 3236,
+        "close": 3239
+      }, {
+        "open": 3238,
+        "index": 2,
+        "percent": "0.06%",
+        "tradedate": "20141124 14:00:00",
+        "updrop": 2,
+        "high": 3245,
+        "low": 3233,
+        "close": 3241
+      }, {
+        "open": 3240,
+        "index": 3,
+        "percent": "-0.09%",
+        "tradedate": "20141124 15:00:00",
+        "updrop": -3,
+        "high": 3250,
+        "low": 3236,
+        "close": 3238
+      }, {
+        "open": 3237,
+        "index": 4,
+        "percent": "-0.25%",
+        "tradedate": "20141124 16:00:00",
+        "updrop": -8,
+        "high": 3241,
+        "low": 3227,
+        "close": 3230
+      }, {
+        "open": 3229,
+        "index": 5,
+        "percent": "-0.06%",
+        "tradedate": "20141124 17:00:00",
+        "updrop": -2,
+        "high": 3234,
+        "low": 3215,
+        "close": 3228
+      }, {
+        "open": 3227,
+        "index": 6,
+        "percent": "0.03%",
+        "tradedate": "20141124 18:00:00",
+        "updrop": 1,
+        "high": 3238,
+        "low": 3223,
+        "close": 3229
+      }, {
+        "open": 3228,
+        "index": 7,
+        "percent": "0.00%",
+        "tradedate": "20141124 19:00:00",
+        "updrop": 0,
+        "high": 3234,
+        "low": 3226,
+        "close": 3229
+      }, {
+        "open": 3230,
+        "index": 8,
+        "percent": "0.03%",
+        "tradedate": "20141124 20:00:00",
+        "updrop": 1,
+        "high": 3235,
+        "low": 3225,
+        "close": 3230
+      }, {
+        "open": 3229,
+        "index": 9,
+        "percent": "0.09%",
+        "tradedate": "20141124 21:00:00",
+        "updrop": 3,
+        "high": 3236,
+        "low": 3217,
+        "close": 3233
+      }, {
+        "open": 3234,
+        "index": 10,
+        "percent": "0.43%",
+        "tradedate": "20141124 22:00:00",
+        "updrop": 14,
+        "high": 3251,
+        "low": 3232,
+        "close": 3247
+      }, {
+        "open": 3246,
+        "index": 11,
+        "percent": "0.00%",
+        "tradedate": "20141124 23:00:00",
+        "updrop": 0,
+        "high": 3258,
+        "low": 3241,
+        "close": 3247
+      }, {
+        "open": 3248,
+        "index": 12,
+        "percent": "0.03%",
+        "tradedate": "20141125 00:00:00",
+        "updrop": 1,
+        "high": 3254,
+        "low": 3243,
+        "close": 3248
+      }, {
+        "open": 3247,
+        "index": 13,
+        "percent": "-0.62%",
+        "tradedate": "20141125 01:00:00",
+        "updrop": -20,
+        "high": 3249,
+        "low": 3227,
+        "close": 3228
+      }, {
+        "open": 3227,
+        "index": 14,
+        "percent": "0.43%",
+        "tradedate": "20141125 02:00:00",
+        "updrop": 14,
+        "high": 3242,
+        "low": 3227,
+        "close": 3242
+      }, {
+        "open": 3243,
+        "index": 15,
+        "percent": "0.15%",
+        "tradedate": "20141125 03:00:00",
+        "updrop": 5,
+        "high": 3253,
+        "low": 3240,
+        "close": 3247
+      }, {
+        "open": 3246,
+        "index": 16,
+        "percent": "0.12%",
+        "tradedate": "20141125 04:00:00",
+        "updrop": 4,
+        "high": 3254,
+        "low": 3245,
+        "close": 3251
+      }, {
+        "open": 3256,
+        "index": 17,
+        "percent": "0.25%",
+        "tradedate": "20141125 08:00:00",
+        "updrop": 8,
+        "high": 3260,
+        "low": 3255,
+        "close": 3259
+      }, {
+        "open": 3260,
+        "index": 18,
+        "percent": "0.06%",
+        "tradedate": "20141125 09:00:00",
+        "updrop": 2,
+        "high": 3263,
+        "low": 3258,
+        "close": 3261
+      }, {
+        "open": 3262,
+        "index": 19,
+        "percent": "0.06%",
+        "tradedate": "20141125 10:00:00",
+        "updrop": 2,
+        "high": 3267,
+        "low": 3257,
+        "close": 3263
+      }, {
+        "open": 3264,
+        "index": 20,
+        "percent": "-0.03%",
+        "tradedate": "20141125 11:00:00",
+        "updrop": -1,
+        "high": 3266,
+        "low": 3260,
+        "close": 3262
+      }, {
+        "open": 3261,
+        "index": 21,
+        "percent": "0.06%",
+        "tradedate": "20141125 12:00:00",
+        "updrop": 2,
+        "high": 3277,
+        "low": 3260,
+        "close": 3264
+      }, {
+        "open": 3265,
+        "index": 22,
+        "percent": "-0.09%",
+        "tradedate": "20141125 13:00:00",
+        "updrop": -3,
+        "high": 3267,
+        "low": 3256,
+        "close": 3261
+      }, {
+        "open": 3262,
+        "index": 23,
+        "percent": "0.03%",
+        "tradedate": "20141125 14:00:00",
+        "updrop": 1,
+        "high": 3265,
+        "low": 3256,
+        "close": 3262
+      }, {
+        "open": 3263,
+        "index": 24,
+        "percent": "0.28%",
+        "tradedate": "20141125 15:00:00",
+        "updrop": 9,
+        "high": 3273,
+        "low": 3260,
+        "close": 3271
+      }, {
+        "open": 3272,
+        "index": 25,
+        "percent": "-0.21%",
+        "tradedate": "20141125 16:00:00",
+        "updrop": -7,
+        "high": 3275,
+        "low": 3261,
+        "close": 3264
+      }, {
+        "open": 3265,
+        "index": 26,
+        "percent": "0.58%",
+        "tradedate": "20141125 17:00:00",
+        "updrop": 19,
+        "high": 3286,
+        "low": 3264,
+        "close": 3283
+      }, {
+        "open": 3284,
+        "index": 27,
+        "percent": "0.06%",
+        "tradedate": "20141125 18:00:00",
+        "updrop": 2,
+        "high": 3289,
+        "low": 3275,
+        "close": 3285
+      }, {
+        "open": 3286,
+        "index": 28,
+        "percent": "0.30%",
+        "tradedate": "20141125 19:00:00",
+        "updrop": 10,
+        "high": 3302,
+        "low": 3285,
+        "close": 3295
+      }, {
+        "open": 3296,
+        "index": 29,
+        "percent": "-0.06%",
+        "tradedate": "20141125 20:00:00",
+        "updrop": -2,
+        "high": 3299,
+        "low": 3288,
+        "close": 3293
+      }, {
+        "open": 3292,
+        "index": 30,
+        "percent": "-0.21%",
+        "tradedate": "20141125 21:00:00",
+        "updrop": -7,
+        "high": 3293,
+        "low": 3280,
+        "close": 3286
+      }, {
+        "open": 3287,
+        "index": 31,
+        "percent": "-0.64%",
+        "tradedate": "20141125 22:00:00",
+        "updrop": -21,
+        "high": 3295,
+        "low": 3260,
+        "close": 3265
+      }, {
+        "open": 3266,
+        "index": 32,
+        "percent": "0.70%",
+        "tradedate": "20141125 23:00:00",
+        "updrop": 23,
+        "high": 3295,
+        "low": 3253,
+        "close": 3288
+      }, {
+        "open": 3289,
+        "index": 33,
+        "percent": "-0.09%",
+        "tradedate": "20141126 00:00:00",
+        "updrop": -3,
+        "high": 3294,
+        "low": 3276,
+        "close": 3285
+      }, {
+        "open": 3284,
+        "index": 34,
+        "percent": "-0.52%",
+        "tradedate": "20141126 01:00:00",
+        "updrop": -17,
+        "high": 3285,
+        "low": 3264,
+        "close": 3268
+      }, {
+        "open": 3269,
+        "index": 35,
+        "percent": "0.03%",
+        "tradedate": "20141126 02:00:00",
+        "updrop": 1,
+        "high": 3274,
+        "low": 3260,
+        "close": 3269
+      }, {
+        "open": 3270,
+        "index": 36,
+        "percent": "0.18%",
+        "tradedate": "20141126 03:00:00",
+        "updrop": 6,
+        "high": 3278,
+        "low": 3268,
+        "close": 3275
+      }, {
+        "open": 3276,
+        "index": 37,
+        "percent": "0.21%",
+        "tradedate": "20141126 04:00:00",
+        "updrop": 7,
+        "high": 3284,
+        "low": 3273,
+        "close": 3282
+      }, {
+        "open": 3294,
+        "index": 38,
+        "percent": "0.34%",
+        "tradedate": "20141126 08:00:00",
+        "updrop": 11,
+        "high": 3296,
+        "low": 3291,
+        "close": 3293
+      }, {
+        "open": 3292,
+        "index": 39,
+        "percent": "-0.27%",
+        "tradedate": "20141126 09:00:00",
+        "updrop": -9,
+        "high": 3295,
+        "low": 3282,
+        "close": 3284
+      }, {
+        "open": 3285,
+        "index": 40,
+        "percent": "-0.03%",
+        "tradedate": "20141126 10:00:00",
+        "updrop": -1,
+        "high": 3296,
+        "low": 3282,
+        "close": 3283
+      }, {
+        "open": 3282,
+        "index": 41,
+        "percent": "-0.12%",
+        "tradedate": "20141126 11:00:00",
+        "updrop": -4,
+        "high": 3286,
+        "low": 3277,
+        "close": 3279
+      }, {
+        "open": 3278,
+        "index": 42,
+        "percent": "0.03%",
+        "tradedate": "20141126 12:00:00",
+        "updrop": 1,
+        "high": 3284,
+        "low": 3276,
+        "close": 3280
+      }, {
+        "open": 3279,
+        "index": 43,
+        "percent": "-0.03%",
+        "tradedate": "20141126 13:00:00",
+        "updrop": -1,
+        "high": 3281,
+        "low": 3274,
+        "close": 3279
+      }
+    ],
+    "info": {
+      "id": 1,
+      "count": 43,
+      "start": 1000,
+      "nickname": "XAGUSD",
+      "name": "现货白银",
+      "tradedate": "20141126 14:00:00"
+    }
+  },
+  "20141114 08:00:00,45": {
+    "datas": [
+      {
+        "open": 3106,
+        "index": 1,
+        "percent": "-0.54%",
+        "tradedate": "20141112 07:00:00",
+        "updrop": -17,
+        "high": 3106,
+        "low": 3106,
+        "close": 3106
+      }, {
+        "open": 3106,
+        "index": 2,
+        "percent": "-0.06%",
+        "tradedate": "20141112 08:00:00",
+        "updrop": -2,
+        "high": 3107,
+        "low": 3093,
+        "close": 3104
+      }, {
+        "open": 3105,
+        "index": 3,
+        "percent": "0.03%",
+        "tradedate": "20141112 09:00:00",
+        "updrop": 1,
+        "high": 3114,
+        "low": 3101,
+        "close": 3105
+      }, {
+        "open": 3106,
+        "index": 4,
+        "percent": "-0.10%",
+        "tradedate": "20141112 10:00:00",
+        "updrop": -3,
+        "high": 3106,
+        "low": 3095,
+        "close": 3102
+      }, {
+        "open": 3101,
+        "index": 5,
+        "percent": "-0.03%",
+        "tradedate": "20141112 11:00:00",
+        "updrop": -1,
+        "high": 3113,
+        "low": 3100,
+        "close": 3101
+      }, {
+        "open": 3100,
+        "index": 6,
+        "percent": "-0.13%",
+        "tradedate": "20141112 12:00:00",
+        "updrop": -4,
+        "high": 3104,
+        "low": 3096,
+        "close": 3097
+      }, {
+        "open": 3096,
+        "index": 7,
+        "percent": "0.26%",
+        "tradedate": "20141112 13:00:00",
+        "updrop": 8,
+        "high": 3107,
+        "low": 3095,
+        "close": 3105
+      }, {
+        "open": 3106,
+        "index": 8,
+        "percent": "0.16%",
+        "tradedate": "20141112 14:00:00",
+        "updrop": 5,
+        "high": 3110,
+        "low": 3103,
+        "close": 3110
+      }, {
+        "open": 3111,
+        "index": 9,
+        "percent": "-0.10%",
+        "tradedate": "20141112 15:00:00",
+        "updrop": -3,
+        "high": 3118,
+        "low": 3105,
+        "close": 3107
+      }, {
+        "open": 3106,
+        "index": 10,
+        "percent": "-0.13%",
+        "tradedate": "20141112 16:00:00",
+        "updrop": -4,
+        "high": 3112,
+        "low": 3103,
+        "close": 3103
+      }, {
+        "open": 3102,
+        "index": 11,
+        "percent": "-0.03%",
+        "tradedate": "20141112 17:00:00",
+        "updrop": -1,
+        "high": 3102,
+        "low": 3092,
+        "close": 3102
+      }, {
+        "open": 3101,
+        "index": 12,
+        "percent": "-0.26%",
+        "tradedate": "20141112 18:00:00",
+        "updrop": -8,
+        "high": 3102,
+        "low": 3089,
+        "close": 3094
+      }, {
+        "open": 3093,
+        "index": 13,
+        "percent": "-0.03%",
+        "tradedate": "20141112 19:00:00",
+        "updrop": -1,
+        "high": 3100,
+        "low": 3092,
+        "close": 3093
+      }, {
+        "open": 3092,
+        "index": 14,
+        "percent": "-0.26%",
+        "tradedate": "20141112 20:00:00",
+        "updrop": -8,
+        "high": 3101,
+        "low": 3082,
+        "close": 3085
+      }, {
+        "open": 3084,
+        "index": 15,
+        "percent": "-0.19%",
+        "tradedate": "20141112 21:00:00",
+        "updrop": -6,
+        "high": 3088,
+        "low": 3076,
+        "close": 3079
+      }, {
+        "open": 3078,
+        "index": 16,
+        "percent": "0.26%",
+        "tradedate": "20141112 22:00:00",
+        "updrop": 8,
+        "high": 3099,
+        "low": 3078,
+        "close": 3087
+      }, {
+        "open": 3088,
+        "index": 17,
+        "percent": "0.29%",
+        "tradedate": "20141112 23:00:00",
+        "updrop": 9,
+        "high": 3101,
+        "low": 3079,
+        "close": 3096
+      }, {
+        "open": 3097,
+        "index": 18,
+        "percent": "-0.06%",
+        "tradedate": "20141113 00:00:00",
+        "updrop": -2,
+        "high": 3103,
+        "low": 3090,
+        "close": 3094
+      }, {
+        "open": 3095,
+        "index": 19,
+        "percent": "0.03%",
+        "tradedate": "20141113 01:00:00",
+        "updrop": 1,
+        "high": 3097,
+        "low": 3085,
+        "close": 3095
+      }, {
+        "open": 3094,
+        "index": 20,
+        "percent": "0.29%",
+        "tradedate": "20141113 02:00:00",
+        "updrop": 9,
+        "high": 3110,
+        "low": 3091,
+        "close": 3104
+      }, {
+        "open": 3103,
+        "index": 21,
+        "percent": "-0.32%",
+        "tradedate": "20141113 03:00:00",
+        "updrop": -10,
+        "high": 3105,
+        "low": 3084,
+        "close": 3094
+      }, {
+        "open": 3093,
+        "index": 22,
+        "percent": "-0.19%",
+        "tradedate": "20141113 04:00:00",
+        "updrop": -6,
+        "high": 3096,
+        "low": 3085,
+        "close": 3088
+      }, {
+        "open": 3095,
+        "index": 23,
+        "percent": "0.06%",
+        "tradedate": "20141113 08:00:00",
+        "updrop": 2,
+        "high": 3095,
+        "low": 3084,
+        "close": 3090
+      }, {
+        "open": 3089,
+        "index": 24,
+        "percent": "-0.13%",
+        "tradedate": "20141113 09:00:00",
+        "updrop": -4,
+        "high": 3095,
+        "low": 3085,
+        "close": 3086
+      }, {
+        "open": 3087,
+        "index": 25,
+        "percent": "-0.13%",
+        "tradedate": "20141113 10:00:00",
+        "updrop": -4,
+        "high": 3088,
+        "low": 3073,
+        "close": 3082
+      }, {
+        "open": 3081,
+        "index": 26,
+        "percent": "0.16%",
+        "tradedate": "20141113 11:00:00",
+        "updrop": 5,
+        "high": 3088,
+        "low": 3079,
+        "close": 3087
+      }, {
+        "open": 3088,
+        "index": 27,
+        "percent": "0.16%",
+        "tradedate": "20141113 12:00:00",
+        "updrop": 5,
+        "high": 3094,
+        "low": 3085,
+        "close": 3092
+      }, {
+        "open": 3091,
+        "index": 28,
+        "percent": "0.19%",
+        "tradedate": "20141113 13:00:00",
+        "updrop": 6,
+        "high": 3108,
+        "low": 3089,
+        "close": 3098
+      }, {
+        "open": 3099,
+        "index": 29,
+        "percent": "-0.03%",
+        "tradedate": "20141113 14:00:00",
+        "updrop": -1,
+        "high": 3100,
+        "low": 3092,
+        "close": 3097
+      }, {
+        "open": 3098,
+        "index": 30,
+        "percent": "-0.23%",
+        "tradedate": "20141113 15:00:00",
+        "updrop": -7,
+        "high": 3101,
+        "low": 3089,
+        "close": 3090
+      }, {
+        "open": 3091,
+        "index": 31,
+        "percent": "-0.19%",
+        "tradedate": "20141113 16:00:00",
+        "updrop": -6,
+        "high": 3099,
+        "low": 3079,
+        "close": 3084
+      }, {
+        "open": 3085,
+        "index": 32,
+        "percent": "0.65%",
+        "tradedate": "20141113 17:00:00",
+        "updrop": 20,
+        "high": 3105,
+        "low": 3085,
+        "close": 3104
+      }, {
+        "open": 3105,
+        "index": 33,
+        "percent": "-0.03%",
+        "tradedate": "20141113 18:00:00",
+        "updrop": -1,
+        "high": 3113,
+        "low": 3096,
+        "close": 3103
+      }, {
+        "open": 3104,
+        "index": 34,
+        "percent": "0.35%",
+        "tradedate": "20141113 19:00:00",
+        "updrop": 11,
+        "high": 3117,
+        "low": 3103,
+        "close": 3114
+      }, {
+        "open": 3115,
+        "index": 35,
+        "percent": "-0.19%",
+        "tradedate": "20141113 20:00:00",
+        "updrop": -6,
+        "high": 3116,
+        "low": 3104,
+        "close": 3108
+      }, {
+        "open": 3109,
+        "index": 36,
+        "percent": "-0.13%",
+        "tradedate": "20141113 21:00:00",
+        "updrop": -4,
+        "high": 3110,
+        "low": 3099,
+        "close": 3104
+      }, {
+        "open": 3105,
+        "index": 37,
+        "percent": "0.16%",
+        "tradedate": "20141113 22:00:00",
+        "updrop": 5,
+        "high": 3120,
+        "low": 3100,
+        "close": 3109
+      }, {
+        "open": 3110,
+        "index": 38,
+        "percent": "-0.55%",
+        "tradedate": "20141113 23:00:00",
+        "updrop": -17,
+        "high": 3110,
+        "low": 3090,
+        "close": 3092
+      }, {
+        "open": 3093,
+        "index": 39,
+        "percent": "0.19%",
+        "tradedate": "20141114 00:00:00",
+        "updrop": 6,
+        "high": 3100,
+        "low": 3087,
+        "close": 3098
+      }, {
+        "open": 3097,
+        "index": 40,
+        "percent": "0.26%",
+        "tradedate": "20141114 01:00:00",
+        "updrop": 8,
+        "high": 3107,
+        "low": 3092,
+        "close": 3106
+      }, {
+        "open": 3107,
+        "index": 41,
+        "percent": "-0.32%",
+        "tradedate": "20141114 02:00:00",
+        "updrop": -10,
+        "high": 3108,
+        "low": 3094,
+        "close": 3096
+      }, {
+        "open": 3095,
+        "index": 42,
+        "percent": "-0.36%",
+        "tradedate": "20141114 03:00:00",
+        "updrop": -11,
+        "high": 3096,
+        "low": 3085,
+        "close": 3085
+      }, {
+        "open": 3086,
+        "index": 43,
+        "percent": "-0.03%",
+        "tradedate": "20141114 04:00:00",
+        "updrop": -1,
+        "high": 3087,
+        "low": 3076,
+        "close": 3084
+      }
+    ],
+    "info": {
+      "id": 1,
+      "count": 43,
+      "start": 1000,
+      "nickname": "XAGUSD",
+      "name": "现货白银",
+      "tradedate": "20141114 08:00:00"
+    }
+  },
+  "20141028 14:00:00,45": {
+    "datas": [
+      {
+        "open": 3405,
+        "index": 1,
+        "percent": "0.06%",
+        "tradedate": "20141024 13:00:00",
+        "updrop": 2,
+        "high": 3412,
+        "low": 3404,
+        "close": 3406
+      }, {
+        "open": 3407,
+        "index": 2,
+        "percent": "0.09%",
+        "tradedate": "20141024 14:00:00",
+        "updrop": 3,
+        "high": 3413,
+        "low": 3404,
+        "close": 3409
+      }, {
+        "open": 3408,
+        "index": 3,
+        "percent": "0.15%",
+        "tradedate": "20141024 15:00:00",
+        "updrop": 5,
+        "high": 3416,
+        "low": 3406,
+        "close": 3414
+      }, {
+        "open": 3415,
+        "index": 4,
+        "percent": "-0.21%",
+        "tradedate": "20141024 16:00:00",
+        "updrop": -7,
+        "high": 3416,
+        "low": 3404,
+        "close": 3407
+      }, {
+        "open": 3408,
+        "index": 5,
+        "percent": "0.06%",
+        "tradedate": "20141024 17:00:00",
+        "updrop": 2,
+        "high": 3417,
+        "low": 3406,
+        "close": 3409
+      }, {
+        "open": 3408,
+        "index": 6,
+        "percent": "-0.12%",
+        "tradedate": "20141024 18:00:00",
+        "updrop": -4,
+        "high": 3409,
+        "low": 3402,
+        "close": 3405
+      }, {
+        "open": 3406,
+        "index": 7,
+        "percent": "-0.23%",
+        "tradedate": "20141024 19:00:00",
+        "updrop": -8,
+        "high": 3409,
+        "low": 3396,
+        "close": 3397
+      }, {
+        "open": 3396,
+        "index": 8,
+        "percent": "0.41%",
+        "tradedate": "20141024 20:00:00",
+        "updrop": 14,
+        "high": 3414,
+        "low": 3396,
+        "close": 3411
+      }, {
+        "open": 3412,
+        "index": 9,
+        "percent": "-0.12%",
+        "tradedate": "20141024 21:00:00",
+        "updrop": -4,
+        "high": 3416,
+        "low": 3398,
+        "close": 3407
+      }, {
+        "open": 3406,
+        "index": 10,
+        "percent": "0.44%",
+        "tradedate": "20141024 22:00:00",
+        "updrop": 15,
+        "high": 3431,
+        "low": 3406,
+        "close": 3422
+      }, {
+        "open": 3423,
+        "index": 11,
+        "percent": "-0.96%",
+        "tradedate": "20141024 23:00:00",
+        "updrop": -33,
+        "high": 3428,
+        "low": 3389,
+        "close": 3389
+      }, {
+        "open": 3390,
+        "index": 12,
+        "percent": "0.32%",
+        "tradedate": "20141025 00:00:00",
+        "updrop": 11,
+        "high": 3401,
+        "low": 3388,
+        "close": 3400
+      }, {
+        "open": 3399,
+        "index": 13,
+        "percent": "0.03%",
+        "tradedate": "20141025 01:00:00",
+        "updrop": 1,
+        "high": 3407,
+        "low": 3397,
+        "close": 3401
+      }, {
+        "open": 3402,
+        "index": 14,
+        "percent": "-0.03%",
+        "tradedate": "20141025 02:00:00",
+        "updrop": -1,
+        "high": 3403,
+        "low": 3395,
+        "close": 3400
+      }, {
+        "open": 3399,
+        "index": 15,
+        "percent": "-0.09%",
+        "tradedate": "20141025 03:00:00",
+        "updrop": -3,
+        "high": 3403,
+        "low": 3397,
+        "close": 3397
+      }, {
+        "open": 3396,
+        "index": 16,
+        "percent": "0.06%",
+        "tradedate": "20141025 04:00:00",
+        "updrop": 2,
+        "high": 3401,
+        "low": 3395,
+        "close": 3399
+      }, {
+        "open": 3392,
+        "index": 17,
+        "percent": "-0.03%",
+        "tradedate": "20141027 09:00:00",
+        "updrop": -1,
+        "high": 3398,
+        "low": 3387,
+        "close": 3398
+      }, {
+        "open": 3397,
+        "index": 18,
+        "percent": "0.09%",
+        "tradedate": "20141027 10:00:00",
+        "updrop": 3,
+        "high": 3407,
+        "low": 3397,
+        "close": 3401
+      }, {
+        "open": 3400,
+        "index": 19,
+        "percent": "-0.15%",
+        "tradedate": "20141027 11:00:00",
+        "updrop": -5,
+        "high": 3402,
+        "low": 3393,
+        "close": 3396
+      }, {
+        "open": 3397,
+        "index": 20,
+        "percent": "-0.09%",
+        "tradedate": "20141027 12:00:00",
+        "updrop": -3,
+        "high": 3398,
+        "low": 3392,
+        "close": 3393
+      }, {
+        "open": 3394,
+        "index": 21,
+        "percent": "-0.09%",
+        "tradedate": "20141027 13:00:00",
+        "updrop": -3,
+        "high": 3396,
+        "low": 3387,
+        "close": 3390
+      }, {
+        "open": 3389,
+        "index": 22,
+        "percent": "0.18%",
+        "tradedate": "20141027 14:00:00",
+        "updrop": 6,
+        "high": 3400,
+        "low": 3387,
+        "close": 3396
+      }, {
+        "open": 3395,
+        "index": 23,
+        "percent": "-0.03%",
+        "tradedate": "20141027 15:00:00",
+        "updrop": -1,
+        "high": 3399,
+        "low": 3391,
+        "close": 3395
+      }, {
+        "open": 3394,
+        "index": 24,
+        "percent": "-0.12%",
+        "tradedate": "20141027 16:00:00",
+        "updrop": -4,
+        "high": 3396,
+        "low": 3389,
+        "close": 3391
+      }, {
+        "open": 3390,
+        "index": 25,
+        "percent": "0.12%",
+        "tradedate": "20141027 17:00:00",
+        "updrop": 4,
+        "high": 3399,
+        "low": 3389,
+        "close": 3395
+      }, {
+        "open": 3396,
+        "index": 26,
+        "percent": "0.18%",
+        "tradedate": "20141027 18:00:00",
+        "updrop": 6,
+        "high": 3401,
+        "low": 3395,
+        "close": 3401
+      }, {
+        "open": 3402,
+        "index": 27,
+        "percent": "-0.06%",
+        "tradedate": "20141027 19:00:00",
+        "updrop": -2,
+        "high": 3405,
+        "low": 3395,
+        "close": 3399
+      }, {
+        "open": 3400,
+        "index": 28,
+        "percent": "0.06%",
+        "tradedate": "20141027 20:00:00",
+        "updrop": 2,
+        "high": 3405,
+        "low": 3396,
+        "close": 3401
+      }, {
+        "open": 3400,
+        "index": 29,
+        "percent": "-0.12%",
+        "tradedate": "20141027 21:00:00",
+        "updrop": -4,
+        "high": 3401,
+        "low": 3395,
+        "close": 3397
+      }, {
+        "open": 3398,
+        "index": 30,
+        "percent": "-0.03%",
+        "tradedate": "20141027 22:00:00",
+        "updrop": -1,
+        "high": 3398,
+        "low": 3385,
+        "close": 3396
+      }, {
+        "open": 3397,
+        "index": 31,
+        "percent": "-0.21%",
+        "tradedate": "20141027 23:00:00",
+        "updrop": -7,
+        "high": 3406,
+        "low": 3387,
+        "close": 3389
+      }, {
+        "open": 3390,
+        "index": 32,
+        "percent": "0.30%",
+        "tradedate": "20141028 00:00:00",
+        "updrop": 10,
+        "high": 3403,
+        "low": 3389,
+        "close": 3399
+      }, {
+        "open": 3400,
+        "index": 33,
+        "percent": "0.00%",
+        "tradedate": "20141028 01:00:00",
+        "updrop": 0,
+        "high": 3402,
+        "low": 3394,
+        "close": 3399
+      }, {
+        "open": 3398,
+        "index": 34,
+        "percent": "-0.03%",
+        "tradedate": "20141028 02:00:00",
+        "updrop": -1,
+        "high": 3400,
+        "low": 3392,
+        "close": 3398
+      }, {
+        "open": 3399,
+        "index": 35,
+        "percent": "-0.24%",
+        "tradedate": "20141028 03:00:00",
+        "updrop": -8,
+        "high": 3400,
+        "low": 3388,
+        "close": 3390
+      }, {
+        "open": 3391,
+        "index": 36,
+        "percent": "-0.09%",
+        "tradedate": "20141028 04:00:00",
+        "updrop": -3,
+        "high": 3393,
+        "low": 3386,
+        "close": 3387
+      }, {
+        "open": 3382,
+        "index": 37,
+        "percent": "-0.03%",
+        "tradedate": "20141028 07:00:00",
+        "updrop": -1,
+        "high": 3386,
+        "low": 3380,
+        "close": 3386
+      }, {
+        "open": 3385,
+        "index": 38,
+        "percent": "-0.06%",
+        "tradedate": "20141028 08:00:00",
+        "updrop": -2,
+        "high": 3388,
+        "low": 3384,
+        "close": 3384
+      }, {
+        "open": 3385,
+        "index": 39,
+        "percent": "-0.03%",
+        "tradedate": "20141028 09:00:00",
+        "updrop": -1,
+        "high": 3385,
+        "low": 3374,
+        "close": 3383
+      }, {
+        "open": 3384,
+        "index": 40,
+        "percent": "0.74%",
+        "tradedate": "20141028 10:00:00",
+        "updrop": 25,
+        "high": 3410,
+        "low": 3383,
+        "close": 3408
+      }, {
+        "open": 3409,
+        "index": 41,
+        "percent": "-0.06%",
+        "tradedate": "20141028 11:00:00",
+        "updrop": -2,
+        "high": 3409,
+        "low": 3402,
+        "close": 3406
+      }, {
+        "open": 3407,
+        "index": 42,
+        "percent": "-0.26%",
+        "tradedate": "20141028 12:00:00",
+        "updrop": -9,
+        "high": 3409,
+        "low": 3396,
+        "close": 3397
+      }, {
+        "open": 3396,
+        "index": 43,
+        "percent": "-0.03%",
+        "tradedate": "20141028 13:00:00",
+        "updrop": -1,
+        "high": 3397,
+        "low": 3390,
+        "close": 3396
+      }
+    ],
+    "info": {
+      "id": 1,
+      "count": 43,
+      "start": 1000,
+      "nickname": "XAGUSD",
+      "name": "现货白银",
+      "tradedate": "20141028 14:00:00"
+    }
+  },
+  "20141020 13:00:00,45": {
+    "datas": [
+      {
+        "open": 3447,
+        "index": 1,
+        "percent": "-0.03%",
+        "tradedate": "20141016 12:00:00",
+        "updrop": -1,
+        "high": 3453,
+        "low": 3443,
+        "close": 3445
+      }, {
+        "open": 3444,
+        "index": 2,
+        "percent": "0.12%",
+        "tradedate": "20141016 13:00:00",
+        "updrop": 4,
+        "high": 3450,
+        "low": 3440,
+        "close": 3449
+      }, {
+        "open": 3448,
+        "index": 3,
+        "percent": "-0.09%",
+        "tradedate": "20141016 14:00:00",
+        "updrop": -3,
+        "high": 3451,
+        "low": 3445,
+        "close": 3446
+      }, {
+        "open": 3447,
+        "index": 4,
+        "percent": "-0.15%",
+        "tradedate": "20141016 15:00:00",
+        "updrop": -5,
+        "high": 3449,
+        "low": 3436,
+        "close": 3441
+      }, {
+        "open": 3440,
+        "index": 5,
+        "percent": "0.35%",
+        "tradedate": "20141016 16:00:00",
+        "updrop": 12,
+        "high": 3455,
+        "low": 3435,
+        "close": 3453
+      }, {
+        "open": 3452,
+        "index": 6,
+        "percent": "-0.26%",
+        "tradedate": "20141016 17:00:00",
+        "updrop": -9,
+        "high": 3458,
+        "low": 3439,
+        "close": 3444
+      }, {
+        "open": 3445,
+        "index": 7,
+        "percent": "-0.20%",
+        "tradedate": "20141016 18:00:00",
+        "updrop": -7,
+        "high": 3450,
+        "low": 3436,
+        "close": 3437
+      }, {
+        "open": 3436,
+        "index": 8,
+        "percent": "0.20%",
+        "tradedate": "20141016 19:00:00",
+        "updrop": 7,
+        "high": 3454,
+        "low": 3435,
+        "close": 3444
+      }, {
+        "open": 3445,
+        "index": 9,
+        "percent": "-0.09%",
+        "tradedate": "20141016 20:00:00",
+        "updrop": -3,
+        "high": 3455,
+        "low": 3440,
+        "close": 3441
+      }, {
+        "open": 3440,
+        "index": 10,
+        "percent": "-0.70%",
+        "tradedate": "20141016 21:00:00",
+        "updrop": -24,
+        "high": 3441,
+        "low": 3410,
+        "close": 3417
+      }, {
+        "open": 3416,
+        "index": 11,
+        "percent": "-0.12%",
+        "tradedate": "20141016 22:00:00",
+        "updrop": -4,
+        "high": 3417,
+        "low": 3397,
+        "close": 3413
+      }, {
+        "open": 3414,
+        "index": 12,
+        "percent": "0.38%",
+        "tradedate": "20141016 23:00:00",
+        "updrop": 13,
+        "high": 3446,
+        "low": 3411,
+        "close": 3426
+      }, {
+        "open": 3425,
+        "index": 13,
+        "percent": "0.44%",
+        "tradedate": "20141017 00:00:00",
+        "updrop": 15,
+        "high": 3443,
+        "low": 3420,
+        "close": 3441
+      }, {
+        "open": 3442,
+        "index": 14,
+        "percent": "0.15%",
+        "tradedate": "20141017 01:00:00",
+        "updrop": 5,
+        "high": 3446,
+        "low": 3435,
+        "close": 3446
+      }, {
+        "open": 3445,
+        "index": 15,
+        "percent": "-0.12%",
+        "tradedate": "20141017 02:00:00",
+        "updrop": -4,
+        "high": 3448,
+        "low": 3437,
+        "close": 3442
+      }, {
+        "open": 3443,
+        "index": 16,
+        "percent": "0.03%",
+        "tradedate": "20141017 03:00:00",
+        "updrop": 1,
+        "high": 3446,
+        "low": 3434,
+        "close": 3443
+      }, {
+        "open": 3444,
+        "index": 17,
+        "percent": "-0.32%",
+        "tradedate": "20141017 04:00:00",
+        "updrop": -11,
+        "high": 3447,
+        "low": 3432,
+        "close": 3432
+      }, {
+        "open": 3431,
+        "index": 18,
+        "percent": "0.03%",
+        "tradedate": "20141017 07:00:00",
+        "updrop": 1,
+        "high": 3434,
+        "low": 3428,
+        "close": 3433
+      }, {
+        "open": 3432,
+        "index": 19,
+        "percent": "-0.03%",
+        "tradedate": "20141017 08:00:00",
+        "updrop": -1,
+        "high": 3440,
+        "low": 3427,
+        "close": 3432
+      }, {
+        "open": 3433,
+        "index": 20,
+        "percent": "-0.06%",
+        "tradedate": "20141017 09:00:00",
+        "updrop": -2,
+        "high": 3437,
+        "low": 3426,
+        "close": 3430
+      }, {
+        "open": 3431,
+        "index": 21,
+        "percent": "0.00%",
+        "tradedate": "20141017 10:00:00",
+        "updrop": 0,
+        "high": 3434,
+        "low": 3423,
+        "close": 3430
+      }, {
+        "open": 3429,
+        "index": 22,
+        "percent": "-0.06%",
+        "tradedate": "20141017 11:00:00",
+        "updrop": -2,
+        "high": 3430,
+        "low": 3425,
+        "close": 3428
+      }, {
+        "open": 3429,
+        "index": 23,
+        "percent": "0.09%",
+        "tradedate": "20141017 12:00:00",
+        "updrop": 3,
+        "high": 3437,
+        "low": 3428,
+        "close": 3431
+      }, {
+        "open": 3430,
+        "index": 24,
+        "percent": "0.06%",
+        "tradedate": "20141017 13:00:00",
+        "updrop": 2,
+        "high": 3436,
+        "low": 3426,
+        "close": 3433
+      }, {
+        "open": 3434,
+        "index": 25,
+        "percent": "0.23%",
+        "tradedate": "20141017 14:00:00",
+        "updrop": 8,
+        "high": 3441,
+        "low": 3432,
+        "close": 3441
+      }, {
+        "open": 3440,
+        "index": 26,
+        "percent": "-0.26%",
+        "tradedate": "20141017 15:00:00",
+        "updrop": -9,
+        "high": 3444,
+        "low": 3431,
+        "close": 3432
+      }, {
+        "open": 3433,
+        "index": 27,
+        "percent": "0.23%",
+        "tradedate": "20141017 16:00:00",
+        "updrop": 8,
+        "high": 3444,
+        "low": 3431,
+        "close": 3440
+      }, {
+        "open": 3439,
+        "index": 28,
+        "percent": "-0.06%",
+        "tradedate": "20141017 17:00:00",
+        "updrop": -2,
+        "high": 3440,
+        "low": 3430,
+        "close": 3438
+      }, {
+        "open": 3439,
+        "index": 29,
+        "percent": "-0.20%",
+        "tradedate": "20141017 18:00:00",
+        "updrop": -7,
+        "high": 3439,
+        "low": 3430,
+        "close": 3431
+      }, {
+        "open": 3430,
+        "index": 30,
+        "percent": "0.00%",
+        "tradedate": "20141017 19:00:00",
+        "updrop": 0,
+        "high": 3438,
+        "low": 3427,
+        "close": 3431
+      }, {
+        "open": 3432,
+        "index": 31,
+        "percent": "-0.09%",
+        "tradedate": "20141017 20:00:00",
+        "updrop": -3,
+        "high": 3433,
+        "low": 3412,
+        "close": 3428
+      }, {
+        "open": 3429,
+        "index": 32,
+        "percent": "-0.12%",
+        "tradedate": "20141017 21:00:00",
+        "updrop": -4,
+        "high": 3437,
+        "low": 3412,
+        "close": 3424
+      }, {
+        "open": 3423,
+        "index": 33,
+        "percent": "-0.23%",
+        "tradedate": "20141017 22:00:00",
+        "updrop": -8,
+        "high": 3430,
+        "low": 3413,
+        "close": 3416
+      }, {
+        "open": 3415,
+        "index": 34,
+        "percent": "-0.06%",
+        "tradedate": "20141017 23:00:00",
+        "updrop": -2,
+        "high": 3419,
+        "low": 3402,
+        "close": 3414
+      }, {
+        "open": 3415,
+        "index": 35,
+        "percent": "0.12%",
+        "tradedate": "20141018 00:00:00",
+        "updrop": 4,
+        "high": 3422,
+        "low": 3407,
+        "close": 3418
+      }, {
+        "open": 3417,
+        "index": 36,
+        "percent": "0.35%",
+        "tradedate": "20141018 01:00:00",
+        "updrop": 12,
+        "high": 3430,
+        "low": 3414,
+        "close": 3430
+      }, {
+        "open": 3429,
+        "index": 37,
+        "percent": "-0.52%",
+        "tradedate": "20141018 02:00:00",
+        "updrop": -18,
+        "high": 3430,
+        "low": 3411,
+        "close": 3412
+      }, {
+        "open": 3413,
+        "index": 38,
+        "percent": "0.06%",
+        "tradedate": "20141018 03:00:00",
+        "updrop": 2,
+        "high": 3420,
+        "low": 3411,
+        "close": 3414
+      }, {
+        "open": 3415,
+        "index": 39,
+        "percent": "-0.03%",
+        "tradedate": "20141018 04:00:00",
+        "updrop": -1,
+        "high": 3415,
+        "low": 3410,
+        "close": 3413
+      }, {
+        "open": 3410,
+        "index": 40,
+        "percent": "0.03%",
+        "tradedate": "20141020 09:00:00",
+        "updrop": 1,
+        "high": 3415,
+        "low": 3408,
+        "close": 3414
+      }, {
+        "open": 3413,
+        "index": 41,
+        "percent": "0.18%",
+        "tradedate": "20141020 10:00:00",
+        "updrop": 6,
+        "high": 3422,
+        "low": 3412,
+        "close": 3420
+      }, {
+        "open": 3419,
+        "index": 42,
+        "percent": "0.12%",
+        "tradedate": "20141020 11:00:00",
+        "updrop": 4,
+        "high": 3425,
+        "low": 3419,
+        "close": 3424
+      }, {
+        "open": 3425,
+        "index": 43,
+        "percent": "-0.09%",
+        "tradedate": "20141020 12:00:00",
+        "updrop": -3,
+        "high": 3430,
+        "low": 3418,
+        "close": 3421
+      }
+    ],
+    "info": {
+      "id": 1,
+      "count": 43,
+      "start": 1000,
+      "nickname": "XAGUSD",
+      "name": "现货白银",
+      "tradedate": "20141020 13:00:00"
+    }
+  },
+  "20140930 02:00:00,45": {
+    "datas": [
+      {
+        "open": 3477,
+        "index": 1,
+        "percent": "-0.55%",
+        "tradedate": "20140926 01:00:00",
+        "updrop": -19,
+        "high": 3477,
+        "low": 3456,
+        "close": 3457
+      }, {
+        "open": 3458,
+        "index": 2,
+        "percent": "0.32%",
+        "tradedate": "20140926 02:00:00",
+        "updrop": 11,
+        "high": 3476,
+        "low": 3448,
+        "close": 3468
+      }, {
+        "open": 3469,
+        "index": 3,
+        "percent": "0.17%",
+        "tradedate": "20140926 03:00:00",
+        "updrop": 6,
+        "high": 3479,
+        "low": 3467,
+        "close": 3474
+      }, {
+        "open": 3473,
+        "index": 4,
+        "percent": "-0.23%",
+        "tradedate": "20140926 04:00:00",
+        "updrop": -8,
+        "high": 3476,
+        "low": 3466,
+        "close": 3466
+      }, {
+        "open": 3464,
+        "index": 5,
+        "percent": "-0.06%",
+        "tradedate": "20140926 07:00:00",
+        "updrop": -2,
+        "high": 3468,
+        "low": 3463,
+        "close": 3464
+      }, {
+        "open": 3463,
+        "index": 6,
+        "percent": "0.20%",
+        "tradedate": "20140926 08:00:00",
+        "updrop": 7,
+        "high": 3472,
+        "low": 3462,
+        "close": 3471
+      }, {
+        "open": 3470,
+        "index": 7,
+        "percent": "-0.03%",
+        "tradedate": "20140926 09:00:00",
+        "updrop": -1,
+        "high": 3476,
+        "low": 3469,
+        "close": 3470
+      }, {
+        "open": 3471,
+        "index": 8,
+        "percent": "0.61%",
+        "tradedate": "20140926 10:00:00",
+        "updrop": 21,
+        "high": 3498,
+        "low": 3470,
+        "close": 3491
+      }, {
+        "open": 3492,
+        "index": 9,
+        "percent": "-0.09%",
+        "tradedate": "20140926 11:00:00",
+        "updrop": -3,
+        "high": 3492,
+        "low": 3482,
+        "close": 3488
+      }, {
+        "open": 3487,
+        "index": 10,
+        "percent": "0.00%",
+        "tradedate": "20140926 12:00:00",
+        "updrop": 0,
+        "high": 3498,
+        "low": 3486,
+        "close": 3488
+      }, {
+        "open": 3489,
+        "index": 11,
+        "percent": "-0.03%",
+        "tradedate": "20140926 13:00:00",
+        "updrop": -1,
+        "high": 3492,
+        "low": 3485,
+        "close": 3487
+      }, {
+        "open": 3488,
+        "index": 12,
+        "percent": "-0.06%",
+        "tradedate": "20140926 14:00:00",
+        "updrop": -2,
+        "high": 3493,
+        "low": 3480,
+        "close": 3485
+      }, {
+        "open": 3484,
+        "index": 13,
+        "percent": "0.26%",
+        "tradedate": "20140926 15:00:00",
+        "updrop": 9,
+        "high": 3508,
+        "low": 3484,
+        "close": 3494
+      }, {
+        "open": 3495,
+        "index": 14,
+        "percent": "-0.26%",
+        "tradedate": "20140926 16:00:00",
+        "updrop": -9,
+        "high": 3496,
+        "low": 3484,
+        "close": 3485
+      }, {
+        "open": 3486,
+        "index": 15,
+        "percent": "-0.03%",
+        "tradedate": "20140926 17:00:00",
+        "updrop": -1,
+        "high": 3488,
+        "low": 3479,
+        "close": 3484
+      }, {
+        "open": 3485,
+        "index": 16,
+        "percent": "0.06%",
+        "tradedate": "20140926 18:00:00",
+        "updrop": 2,
+        "high": 3488,
+        "low": 3481,
+        "close": 3486
+      }, {
+        "open": 3485,
+        "index": 17,
+        "percent": "-0.52%",
+        "tradedate": "20140926 19:00:00",
+        "updrop": -18,
+        "high": 3489,
+        "low": 3468,
+        "close": 3468
+      }, {
+        "open": 3469,
+        "index": 18,
+        "percent": "-0.03%",
+        "tradedate": "20140926 20:00:00",
+        "updrop": -1,
+        "high": 3476,
+        "low": 3462,
+        "close": 3467
+      }, {
+        "open": 3466,
+        "index": 19,
+        "percent": "-0.23%",
+        "tradedate": "20140926 21:00:00",
+        "updrop": -8,
+        "high": 3473,
+        "low": 3457,
+        "close": 3459
+      }, {
+        "open": 3458,
+        "index": 20,
+        "percent": "0.09%",
+        "tradedate": "20140926 22:00:00",
+        "updrop": 3,
+        "high": 3469,
+        "low": 3457,
+        "close": 3462
+      }, {
+        "open": 3463,
+        "index": 21,
+        "percent": "0.23%",
+        "tradedate": "20140926 23:00:00",
+        "updrop": 8,
+        "high": 3472,
+        "low": 3453,
+        "close": 3470
+      }, {
+        "open": 3469,
+        "index": 22,
+        "percent": "0.12%",
+        "tradedate": "20140927 00:00:00",
+        "updrop": 4,
+        "high": 3480,
+        "low": 3469,
+        "close": 3474
+      }, {
+        "open": 3473,
+        "index": 23,
+        "percent": "-0.09%",
+        "tradedate": "20140927 01:00:00",
+        "updrop": -3,
+        "high": 3477,
+        "low": 3469,
+        "close": 3471
+      }, {
+        "open": 3470,
+        "index": 24,
+        "percent": "0.00%",
+        "tradedate": "20140927 02:00:00",
+        "updrop": 0,
+        "high": 3480,
+        "low": 3468,
+        "close": 3471
+      }, {
+        "open": 3470,
+        "index": 25,
+        "percent": "0.00%",
+        "tradedate": "20140927 03:00:00",
+        "updrop": 0,
+        "high": 3473,
+        "low": 3469,
+        "close": 3471
+      }, {
+        "open": 3472,
+        "index": 26,
+        "percent": "0.46%",
+        "tradedate": "20140927 04:00:00",
+        "updrop": 16,
+        "high": 3487,
+        "low": 3469,
+        "close": 3487
+      }, {
+        "open": 3473,
+        "index": 27,
+        "percent": "-0.14%",
+        "tradedate": "20140929 09:00:00",
+        "updrop": -5,
+        "high": 3486,
+        "low": 3473,
+        "close": 3482
+      }, {
+        "open": 3481,
+        "index": 28,
+        "percent": "-0.14%",
+        "tradedate": "20140929 10:00:00",
+        "updrop": -5,
+        "high": 3483,
+        "low": 3467,
+        "close": 3477
+      }, {
+        "open": 3476,
+        "index": 29,
+        "percent": "-0.26%",
+        "tradedate": "20140929 11:00:00",
+        "updrop": -9,
+        "high": 3477,
+        "low": 3466,
+        "close": 3468
+      }, {
+        "open": 3467,
+        "index": 30,
+        "percent": "-0.06%",
+        "tradedate": "20140929 12:00:00",
+        "updrop": -2,
+        "high": 3467,
+        "low": 3459,
+        "close": 3466
+      }, {
+        "open": 3467,
+        "index": 31,
+        "percent": "-0.20%",
+        "tradedate": "20140929 13:00:00",
+        "updrop": -7,
+        "high": 3469,
+        "low": 3458,
+        "close": 3459
+      }, {
+        "open": 3460,
+        "index": 32,
+        "percent": "0.14%",
+        "tradedate": "20140929 14:00:00",
+        "updrop": 5,
+        "high": 3465,
+        "low": 3457,
+        "close": 3464
+      }, {
+        "open": 3463,
+        "index": 33,
+        "percent": "0.17%",
+        "tradedate": "20140929 15:00:00",
+        "updrop": 6,
+        "high": 3475,
+        "low": 3460,
+        "close": 3470
+      }, {
+        "open": 3471,
+        "index": 34,
+        "percent": "0.32%",
+        "tradedate": "20140929 16:00:00",
+        "updrop": 11,
+        "high": 3483,
+        "low": 3467,
+        "close": 3481
+      }, {
+        "open": 3482,
+        "index": 35,
+        "percent": "-0.14%",
+        "tradedate": "20140929 17:00:00",
+        "updrop": -5,
+        "high": 3484,
+        "low": 3472,
+        "close": 3476
+      }, {
+        "open": 3475,
+        "index": 36,
+        "percent": "0.12%",
+        "tradedate": "20140929 18:00:00",
+        "updrop": 4,
+        "high": 3481,
+        "low": 3473,
+        "close": 3480
+      }, {
+        "open": 3481,
+        "index": 37,
+        "percent": "0.14%",
+        "tradedate": "20140929 19:00:00",
+        "updrop": 5,
+        "high": 3492,
+        "low": 3479,
+        "close": 3485
+      }, {
+        "open": 3486,
+        "index": 38,
+        "percent": "0.09%",
+        "tradedate": "20140929 20:00:00",
+        "updrop": 3,
+        "high": 3489,
+        "low": 3477,
+        "close": 3488
+      }, {
+        "open": 3489,
+        "index": 39,
+        "percent": "-0.29%",
+        "tradedate": "20140929 21:00:00",
+        "updrop": -10,
+        "high": 3491,
+        "low": 3467,
+        "close": 3478
+      }, {
+        "open": 3477,
+        "index": 40,
+        "percent": "-0.23%",
+        "tradedate": "20140929 22:00:00",
+        "updrop": -8,
+        "high": 3480,
+        "low": 3468,
+        "close": 3470
+      }, {
+        "open": 3471,
+        "index": 41,
+        "percent": "0.12%",
+        "tradedate": "20140929 23:00:00",
+        "updrop": 4,
+        "high": 3480,
+        "low": 3452,
+        "close": 3474
+      }, {
+        "open": 3475,
+        "index": 42,
+        "percent": "-0.14%",
+        "tradedate": "20140930 00:00:00",
+        "updrop": -5,
+        "high": 3479,
+        "low": 3468,
+        "close": 3469
+      }, {
+        "open": 3470,
+        "index": 43,
+        "percent": "0.23%",
+        "tradedate": "20140930 01:00:00",
+        "updrop": 8,
+        "high": 3478,
+        "low": 3467,
+        "close": 3477
+      }
+    ],
+    "info": {
+      "id": 1,
+      "count": 43,
+      "start": 1000,
+      "nickname": "XAGUSD",
+      "name": "现货白银",
+      "tradedate": "20140930 02:00:00"
+    }
+  },
+  "20140924 17:00:00,45": {
+    "datas": [
+      {
+        "open": 3503,
+        "index": 1,
+        "percent": "0.09%",
+        "tradedate": "20140922 18:00:00",
+        "updrop": 3,
+        "high": 3508,
+        "low": 3499,
+        "close": 3505
+      }, {
+        "open": 3506,
+        "index": 2,
+        "percent": "-0.03%",
+        "tradedate": "20140922 19:00:00",
+        "updrop": -1,
+        "high": 3506,
+        "low": 3498,
+        "close": 3504
+      }, {
+        "open": 3505,
+        "index": 3,
+        "percent": "-0.20%",
+        "tradedate": "20140922 20:00:00",
+        "updrop": -7,
+        "high": 3508,
+        "low": 3480,
+        "close": 3497
+      }, {
+        "open": 3498,
+        "index": 4,
+        "percent": "0.43%",
+        "tradedate": "20140922 21:00:00",
+        "updrop": 15,
+        "high": 3521,
+        "low": 3496,
+        "close": 3512
+      }, {
+        "open": 3511,
+        "index": 5,
+        "percent": "-0.20%",
+        "tradedate": "20140922 22:00:00",
+        "updrop": -7,
+        "high": 3519,
+        "low": 3479,
+        "close": 3505
+      }, {
+        "open": 3506,
+        "index": 6,
+        "percent": "-0.11%",
+        "tradedate": "20140922 23:00:00",
+        "updrop": -4,
+        "high": 3512,
+        "low": 3490,
+        "close": 3501
+      }, {
+        "open": 3500,
+        "index": 7,
+        "percent": "0.77%",
+        "tradedate": "20140923 00:00:00",
+        "updrop": 27,
+        "high": 3533,
+        "low": 3498,
+        "close": 3528
+      }, {
+        "open": 3529,
+        "index": 8,
+        "percent": "-0.26%",
+        "tradedate": "20140923 01:00:00",
+        "updrop": -9,
+        "high": 3533,
+        "low": 3510,
+        "close": 3519
+      }, {
+        "open": 3520,
+        "index": 9,
+        "percent": "0.11%",
+        "tradedate": "20140923 02:00:00",
+        "updrop": 4,
+        "high": 3530,
+        "low": 3515,
+        "close": 3523
+      }, {
+        "open": 3522,
+        "index": 10,
+        "percent": "-0.17%",
+        "tradedate": "20140923 03:00:00",
+        "updrop": -6,
+        "high": 3525,
+        "low": 3515,
+        "close": 3517
+      }, {
+        "open": 3516,
+        "index": 11,
+        "percent": "0.11%",
+        "tradedate": "20140923 04:00:00",
+        "updrop": 4,
+        "high": 3522,
+        "low": 3506,
+        "close": 3521
+      }, {
+        "open": 3507,
+        "index": 12,
+        "percent": "-0.37%",
+        "tradedate": "20140923 07:00:00",
+        "updrop": -13,
+        "high": 3517,
+        "low": 3507,
+        "close": 3508
+      }, {
+        "open": 3509,
+        "index": 13,
+        "percent": "-0.03%",
+        "tradedate": "20140923 08:00:00",
+        "updrop": -1,
+        "high": 3510,
+        "low": 3503,
+        "close": 3507
+      }, {
+        "open": 3506,
+        "index": 14,
+        "percent": "0.14%",
+        "tradedate": "20140923 09:00:00",
+        "updrop": 5,
+        "high": 3514,
+        "low": 3504,
+        "close": 3512
+      }, {
+        "open": 3513,
+        "index": 15,
+        "percent": "0.34%",
+        "tradedate": "20140923 10:00:00",
+        "updrop": 12,
+        "high": 3526,
+        "low": 3506,
+        "close": 3524
+      }, {
+        "open": 3523,
+        "index": 16,
+        "percent": "-0.31%",
+        "tradedate": "20140923 11:00:00",
+        "updrop": -11,
+        "high": 3524,
+        "low": 3511,
+        "close": 3513
+      }, {
+        "open": 3512,
+        "index": 17,
+        "percent": "-0.11%",
+        "tradedate": "20140923 12:00:00",
+        "updrop": -4,
+        "high": 3513,
+        "low": 3504,
+        "close": 3509
+      }, {
+        "open": 3508,
+        "index": 18,
+        "percent": "0.17%",
+        "tradedate": "20140923 13:00:00",
+        "updrop": 6,
+        "high": 3519,
+        "low": 3508,
+        "close": 3515
+      }, {
+        "open": 3514,
+        "index": 19,
+        "percent": "-0.28%",
+        "tradedate": "20140923 14:00:00",
+        "updrop": -10,
+        "high": 3515,
+        "low": 3504,
+        "close": 3505
+      }, {
+        "open": 3506,
+        "index": 20,
+        "percent": "-0.34%",
+        "tradedate": "20140923 15:00:00",
+        "updrop": -12,
+        "high": 3506,
+        "low": 3486,
+        "close": 3493
+      }, {
+        "open": 3492,
+        "index": 21,
+        "percent": "0.34%",
+        "tradedate": "20140923 16:00:00",
+        "updrop": 12,
+        "high": 3507,
+        "low": 3490,
+        "close": 3505
+      }, {
+        "open": 3506,
+        "index": 22,
+        "percent": "0.68%",
+        "tradedate": "20140923 17:00:00",
+        "updrop": 24,
+        "high": 3551,
+        "low": 3505,
+        "close": 3529
+      }, {
+        "open": 3530,
+        "index": 23,
+        "percent": "0.26%",
+        "tradedate": "20140923 18:00:00",
+        "updrop": 9,
+        "high": 3545,
+        "low": 3527,
+        "close": 3538
+      }, {
+        "open": 3539,
+        "index": 24,
+        "percent": "0.31%",
+        "tradedate": "20140923 19:00:00",
+        "updrop": 11,
+        "high": 3557,
+        "low": 3533,
+        "close": 3549
+      }, {
+        "open": 3548,
+        "index": 25,
+        "percent": "-0.31%",
+        "tradedate": "20140923 20:00:00",
+        "updrop": -11,
+        "high": 3555,
+        "low": 3535,
+        "close": 3538
+      }, {
+        "open": 3537,
+        "index": 26,
+        "percent": "-0.54%",
+        "tradedate": "20140923 21:00:00",
+        "updrop": -19,
+        "high": 3539,
+        "low": 3511,
+        "close": 3519
+      }, {
+        "open": 3518,
+        "index": 27,
+        "percent": "-0.31%",
+        "tradedate": "20140923 22:00:00",
+        "updrop": -11,
+        "high": 3529,
+        "low": 3505,
+        "close": 3508
+      }, {
+        "open": 3507,
+        "index": 28,
+        "percent": "0.11%",
+        "tradedate": "20140923 23:00:00",
+        "updrop": 4,
+        "high": 3519,
+        "low": 3503,
+        "close": 3512
+      }, {
+        "open": 3513,
+        "index": 29,
+        "percent": "0.11%",
+        "tradedate": "20140924 00:00:00",
+        "updrop": 4,
+        "high": 3523,
+        "low": 3510,
+        "close": 3516
+      }, {
+        "open": 3515,
+        "index": 30,
+        "percent": "-0.06%",
+        "tradedate": "20140924 01:00:00",
+        "updrop": -2,
+        "high": 3517,
+        "low": 3510,
+        "close": 3514
+      }, {
+        "open": 3513,
+        "index": 31,
+        "percent": "0.09%",
+        "tradedate": "20140924 02:00:00",
+        "updrop": 3,
+        "high": 3522,
+        "low": 3512,
+        "close": 3517
+      }, {
+        "open": 3518,
+        "index": 32,
+        "percent": "0.31%",
+        "tradedate": "20140924 03:00:00",
+        "updrop": 11,
+        "high": 3529,
+        "low": 3517,
+        "close": 3528
+      }, {
+        "open": 3529,
+        "index": 33,
+        "percent": "-0.26%",
+        "tradedate": "20140924 04:00:00",
+        "updrop": -9,
+        "high": 3529,
+        "low": 3513,
+        "close": 3519
+      }, {
+        "open": 3516,
+        "index": 34,
+        "percent": "-0.23%",
+        "tradedate": "20140924 07:00:00",
+        "updrop": -8,
+        "high": 3517,
+        "low": 3509,
+        "close": 3511
+      }, {
+        "open": 3510,
+        "index": 35,
+        "percent": "0.03%",
+        "tradedate": "20140924 08:00:00",
+        "updrop": 1,
+        "high": 3515,
+        "low": 3510,
+        "close": 3512
+      }, {
+        "open": 3511,
+        "index": 36,
+        "percent": "0.03%",
+        "tradedate": "20140924 09:00:00",
+        "updrop": 1,
+        "high": 3515,
+        "low": 3510,
+        "close": 3513
+      }, {
+        "open": 3512,
+        "index": 37,
+        "percent": "-0.03%",
+        "tradedate": "20140924 10:00:00",
+        "updrop": -1,
+        "high": 3516,
+        "low": 3509,
+        "close": 3512
+      }, {
+        "open": 3511,
+        "index": 38,
+        "percent": "-0.09%",
+        "tradedate": "20140924 11:00:00",
+        "updrop": -3,
+        "high": 3513,
+        "low": 3499,
+        "close": 3509
+      }, {
+        "open": 3508,
+        "index": 39,
+        "percent": "0.28%",
+        "tradedate": "20140924 12:00:00",
+        "updrop": 10,
+        "high": 3520,
+        "low": 3505,
+        "close": 3519
+      }, {
+        "open": 3518,
+        "index": 40,
+        "percent": "0.00%",
+        "tradedate": "20140924 13:00:00",
+        "updrop": 0,
+        "high": 3520,
+        "low": 3515,
+        "close": 3519
+      }, {
+        "open": 3520,
+        "index": 41,
+        "percent": "-0.03%",
+        "tradedate": "20140924 14:00:00",
+        "updrop": -1,
+        "high": 3522,
+        "low": 3515,
+        "close": 3518
+      }, {
+        "open": 3517,
+        "index": 42,
+        "percent": "0.26%",
+        "tradedate": "20140924 15:00:00",
+        "updrop": 9,
+        "high": 3534,
+        "low": 3517,
+        "close": 3527
+      }, {
+        "open": 3528,
+        "index": 43,
+        "percent": "-0.51%",
+        "tradedate": "20140924 16:00:00",
+        "updrop": -18,
+        "high": 3531,
+        "low": 3502,
+        "close": 3509
+      }
+    ],
+    "info": {
+      "id": 1,
+      "count": 43,
+      "start": 1000,
+      "nickname": "XAGUSD",
+      "name": "现货白银",
+      "tradedate": "20140924 17:00:00"
+    }
+  }
 };

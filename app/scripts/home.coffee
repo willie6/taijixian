@@ -75,191 +75,10 @@ $('.js-play-game').click( ->
     $('div.js-taiji-sec').css('display', 'block')
 )
 
-option = {
-  chart: 
-    backgroundColor: 'black'
-    renderTo: 'container'
-    events : 
-      load : -> 
-        # set up the updating of the chart each second
-        series = @series[0]
-        setInterval (-> 
-          x = (new Date()).getTime() # current time
-          y = Math.round(Math.random() * 100)
-          series.addPoint([x, y], true, true)
-        ), 1000   
-  ,
-  title: 
-    text: ''
-    x: -20 #center
-  ,
-  subtitle: 
-    text: ''
-    x: -20
-  ,
-  colors: ['#0ff01a', '#38b843', '#ef3312', '#a04433']
-  xAxis:
-    type: 'datetime'
-    gridLineWidth: 0
-    lineWidth: 0
-    tickPixelInterval: 100
-    tickWidth: 0
-    labels:
-      enabled: false
-  ,
-  yAxis: 
-    title: 
-      text: ''
-    ,
-    gridLineColor: 'black'
-    gridLineWidth: 0
-    lineWidth: 0
-    tickWidth: 0
-
-  ,
-  tooltip: 
-    useHTML: true
-    shared: true
-    borderWidth: 0
-    borderRadius: '10px'
-    formatter: -> 
-      "<div style='position: absolute; top:40%; border-color: transparent green transparent transparent; border-style: dashed dashed solid dashed; border-width: 8px'>" + 
-      "<div style='position: absolute; border-color: transparent green transparent transparent; border-style: dashed dashed solid dashed; border-width:8px; top: -8px; left: -6px;'></div>" + 
-      "<div></div></div><div style='position: relative; left: 16px; background: #084c1c; border: 2px solid green; border-radius: 10px; padding: 8px; font-size: 16px; display: block'>" + 
-      "<span style='color: white; display: block;'>行情进入了绿色" + "<br/>" + "区域，太极线发出" + "<br/>" + "下跌信号，请点击</span>" + "<span style='color: #00f901; display: block'>\"卖出平仓\"</span></div>" 
-  ,
-  credits: 
-    enabled: false
-  ,
-  navigator:
-    enabled: false
-  ,
-  scrollbar:
-    enabled: false
-  ,
-  exporting:
-    enabled: false 
-  ,
-  legend:
-    layout: 'vertical'
-    align: 'right'
-    verticalAlign: 'middle'
-    borderWidth: 0
-  ,
-  rangeSelector: 
-    buttons: [{
-      count: 5
-      type: 'minute'
-      text: '1M'
-    }]
-    inputEnabled: false
-    selected: 0
-  ,
-
-  series: [
-    'id': 'kline'
-    'name': 'k线'
-    'type': 'candlestick'
-    'data': demoData.taijiData.line1.filterArray(0, 0)#[1415350800000, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6] #[7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]
-  ,
-    'id': 'line1'
-    'name': 'line1'
-    'type': 'area'
-    'data': demoData.taijiData.line1.filterArray(1, 0)#[12.843111669094075, 12.844913215491289, 12.843599587909988, 12.842886475794424, 12.82267537715067, 12.800324942160223, 12.803674692492546, 12.806405161250826, 12.840381200335797, 12.870022268402469, 12.879086298713457, 12.88665842341425, 12.887108810013554, 12.900085573905994, 12.927756200600712, 12.98062032769398, 13.036693459307292, 13.092541397620948, 13.137917847500795, 13.16080311657791, 13.188023356673328, 13.21521544760629, 13.230978978581918, 13.229740415433833, 13.215412491743486, 13.201337910515246, 13.192442775178998, 13.19736887860888, 13.205616583208625, 13.204912854147217, 13.200774927266114, 13.202857965287894, 13.20170384962718, 13.200437137316637, 13.201225313865418, 13.184786202990832, 13.166629993206403, 13.154863643299596, 13.131330943485978, 13.121309841651472, 13.093892557418862, 13.074441486161433, 13.055356354015935, 13.020282497595161, 12.997932062604717, 12.970711822509301, 12.957453566992298, 12.969079171086825, 12.98579977358597, 12.998016510092087, 13.006039021392183, 12.995454936308548, 12.976313505838139, 12.964856796718353, 12.952189673612938, 12.948389536681312, 12.953822325035413, 12.955314230645605, 12.957453566992298, 12.973498589592493, 12.984730105412627, 12.993315599961853, 13.00800946276414, 13.004406369969704, 13.031514013415297, 13.051274725459745, 13.073709607937559, 13.112808794589615, 13.11962089190408, 13.12564481266977, 13.1238151171101, 13.104927029101798, 13.093442170819554, 13.088375321577388, 13.090965044523383, 13.094821479779922, 13.102478051968085, 13.113934761087872, 13.119789786878819, 13.128290833940678]#filterArray(1, demoData.taijiData.line1)#[7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]
-    'color':'#00ff00'
-    'lineColor': '#039a00'
-  ,
-    'id': 'line2'
-    'name': 'line2'
-    'type': 'area'
-    'data': demoData.taijiData.line2.filterArray(1, 1)#[7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]#[7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]
-    'color': 'transparent'
-    'lineColor': '#004e0a'
-  ,
-    'id': 'line3'
-    'name': 'line3'
-    'type': 'area'
-    'data': demoData.taijiData.line3.filterArray(1, 2)#[7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]#filterArray(1, demoData.taijiData.line3)#[7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]
-    'color': 'transparent'
-    'lineColor': '#707070'
-  ,
-    'id': 'line4'
-    'name': 'line4'
-    'type': 'area'
-    'data': demoData.taijiData.line4.filterArray(1, 3)#[7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]#filterArray(1, demoData.taijiData.line4)#[7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]
-    'color': '#ff0000'
-    'lineColor': '#3b0b0b'
-  ,
-    'id': 'line5'
-    'name': 'line5'
-    'type': 'area'
-    'data': demoData.taijiData.line5.filterArray(1, 4)#[7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]#filterArray(1, demoData.taijiData.line5)#[7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]
-    'color': 'transparent'
-    'lineColor': '#701a1d'
-  ,
-    'id': 'hideLine'
-    'name': 'hideLine'
-    'type': 'line'
-    'data': [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]#filterArray(0, demoData.taijiData.line1) #[7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]
-    'color': 'transparent'
-  ,
-    'id': 'guide'
-    'name': 'guide'
-    'type': 'flags'
-    'data': [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]#filterArray(0, demoData.taijiData.line1)
-    'style':
-      width: 10
-      height: 10
-  ],
-
-  plotOptions: 
-    flags:
-      'animation': if animation? then animation else true
-      'style': display: 'none'
-    candlestick:
-      'color': '#3F3'
-      'lineColor': '#3F3'
-      'upColor': '#FF2D19'
-      'upLineColor': '#FF2D19'
-      'animation': if animation? then animation else true
-    area:
-      'stacking': 'normal'
-      'lineColor': '#666666'
-      'lineWidth': 1
-      'marker':
-        lineWidth: 1
-        lineColor: '#666666'
-      'enableMouseTracking': false
-      'animation': if animation? then animation else true
-    series:
-      'fillOpacity': 0.1
-      'threshold': null 
-      'animation': if animation? then animation else true
-}
-
-# series: [{
-#   name: 'Tokyo',
-#   data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]
-# }, {
-#   name: 'New York',
-#   data: [0.2, 0.8, 5.7, 11.3, 17.0, 22.0, 24.8, 24.1, 20.1, 14.1, 8.6, 2.5]
-# }, {
-#   name: 'Berlin',
-#   data: [0.9, 0.6, 3.5, 8.4, 13.5, 17.0, 18.6, 17.9, 14.3, 9.0, 3.9, 1.0]
-# }, {
-#   name: 'London',
-#   data: [3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8]
-# }]
-
-DataCollections.getData {sid: 'TPME.XAGUSD', limit, tradedate}, (err, resultData) =>
-  resultData.map (item)-> [item[0] * 1, item[4] * 1]
-  showData = dataCollections.taiji(resultData)
-  guideData = dataCollections.taijiGuide(taijiData, guideOperation)
-
 DataCollections =
   # 获取原始数据
   getData: ({sid, limit, tradedate}, next)->
-    next null, @toOLC ohlcDataCache['#{tradedate}, #{limit}']
+    next null, @toOHLC ohlcDataCache["#{tradedate},#{limit}"] 
 
   # 颜色定义
   ma: (arr, n)->
@@ -328,6 +147,219 @@ DataCollections =
   ratepercent: (rate) ->
     (100 * rate).toFixed(2) + '%'
 
+# 定义图标模板
+chart = 
+  maxInOneScreen: 30
+
+  renderPoints: ({onEnd})->
+    renderPointTimer = setInterval(=>
+      if ++@current <= @maxInOneScreen
+        @nextPoint @current, false, false
+      else if @current > @maxInOneScreen and @current < @total
+        @chart.get('hideLine').addPoint @hideLineData[@current + 1], false, true
+        @nextPoint @current, true, true
+      else
+        clearInterval renderPointTimer
+        --@current
+        onEnd?() 
+    , 1500)
+
+  init: (parameters) ->
+    option = 
+      chart: 
+        backgroundColor: 'black'
+        renderTo: parameters.renderTo
+        events : 
+          load : -> 
+            # set up the updating of the chart each second
+            series = @series[0]
+            setInterval (-> 
+              x = (new Date()).getTime() # current time
+              y = Math.round(Math.random() * 100)
+              series.addPoint([x, y], true, true)
+            ), 1000   
+      ,
+      title: 
+        text: ''
+        x: -20 #center
+      ,
+      subtitle: 
+        text: ''
+        x: -20
+      ,
+      xAxis:
+        type: 'datetime'
+        gridLineWidth: 0
+        lineWidth: 0
+        tickPixelInterval: 100
+        tickWidth: 0
+        labels:
+          enabled: false
+      ,
+      yAxis: 
+        title: 
+          text: ''
+        ,
+        gridLineColor: 'black'
+        gridLineWidth: 0
+        lineWidth: 0
+        tickWidth: 0
+
+      ,
+      tooltip: 
+        useHTML: true
+        shared: true
+        borderWidth: 0
+        borderRadius: '10px'
+        formatter: -> 
+          "<div style='position: absolute; top:40%; border-color: transparent green transparent transparent; border-style: dashed dashed solid dashed; border-width: 8px'>" + 
+          "<div style='position: absolute; border-color: transparent green transparent transparent; border-style: dashed dashed solid dashed; border-width:8px; top: -8px; left: -6px;'></div>" + 
+          "<div></div></div><div style='position: relative; left: 16px; background: #084c1c; border: 2px solid green; border-radius: 10px; padding: 8px; font-size: 16px; display: block'>" + 
+          "<span style='color: white; display: block;'>行情进入了绿色" + "<br/>" + "区域，太极线发出" + "<br/>" + "下跌信号，请点击</span>" + "<span style='color: #00f901; display: block'>\"卖出平仓\"</span></div>" 
+      ,
+      credits: 
+        enabled: false
+      ,
+      navigator:
+        enabled: false
+      ,
+      scrollbar:
+        enabled: false
+      ,
+      exporting:
+        enabled: false 
+      ,
+      legend:
+        layout: 'vertical'
+        align: 'right'
+        verticalAlign: 'middle'
+        borderWidth: 0
+      ,
+      rangeSelector: 
+        buttons: [{
+          count: 5
+          type: 'minute'
+          text: '1M'
+        }]
+        inputEnabled: false
+        selected: 0
+      ,
+
+      series: [
+        'id': 'kline'
+        'name': 'k线'
+        'type': 'candlestick'
+        'data': @parameters.ohlcData[0..@parameters.current]#demoData.taijiData.line1.filterArray(0, 0)#[1415350800000, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6] #[7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]
+      ,
+        'id': 'line1'
+        'name': 'line1'
+        'type': 'area'
+        'data': @parameters.taijiData.line1[0..@parameters.current]#[12.843111669094075, 12.844913215491289, 12.843599587909988, 12.842886475794424, 12.82267537715067, 12.800324942160223, 12.803674692492546, 12.806405161250826, 12.840381200335797, 12.870022268402469, 12.879086298713457, 12.88665842341425, 12.887108810013554, 12.900085573905994, 12.927756200600712, 12.98062032769398, 13.036693459307292, 13.092541397620948, 13.137917847500795, 13.16080311657791, 13.188023356673328, 13.21521544760629, 13.230978978581918, 13.229740415433833, 13.215412491743486, 13.201337910515246, 13.192442775178998, 13.19736887860888, 13.205616583208625, 13.204912854147217, 13.200774927266114, 13.202857965287894, 13.20170384962718, 13.200437137316637, 13.201225313865418, 13.184786202990832, 13.166629993206403, 13.154863643299596, 13.131330943485978, 13.121309841651472, 13.093892557418862, 13.074441486161433, 13.055356354015935, 13.020282497595161, 12.997932062604717, 12.970711822509301, 12.957453566992298, 12.969079171086825, 12.98579977358597, 12.998016510092087, 13.006039021392183, 12.995454936308548, 12.976313505838139, 12.964856796718353, 12.952189673612938, 12.948389536681312, 12.953822325035413, 12.955314230645605, 12.957453566992298, 12.973498589592493, 12.984730105412627, 12.993315599961853, 13.00800946276414, 13.004406369969704, 13.031514013415297, 13.051274725459745, 13.073709607937559, 13.112808794589615, 13.11962089190408, 13.12564481266977, 13.1238151171101, 13.104927029101798, 13.093442170819554, 13.088375321577388, 13.090965044523383, 13.094821479779922, 13.102478051968085, 13.113934761087872, 13.119789786878819, 13.128290833940678]#filterArray(1, demoData.taijiData.line1)#[7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]
+        'color':'#00ff00'
+        'lineColor': '#039a00'
+      ,
+        'id': 'line2'
+        'name': 'line2'
+        'type': 'area'
+        'data': @parameters.taijiData.line2[0..@parameters.current]#[7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]#[7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]
+        'color': 'transparent'
+        'lineColor': '#004e0a'
+      ,
+        'id': 'line3'
+        'name': 'line3'
+        'type': 'area'
+        'data': @parameters.taijiData.line3[0..@parameters.current]#[7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]#filterArray(1, demoData.taijiData.line3)#[7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]
+        'color': 'transparent'
+        'lineColor': '#707070'
+      ,
+        'id': 'line4'
+        'name': 'line4'
+        'type': 'area'
+        'data': @parameters.taijiData.line4[0..@parameters.current]#[7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]#filterArray(1, demoData.taijiData.line4)#[7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]
+        'color': '#ff0000'
+        'lineColor': '#3b0b0b'
+      ,
+        'id': 'line5'
+        'name': 'line5'
+        'type': 'area'
+        'data': @parameters.taijiData.line5[0..@parameters.current]#[7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]#filterArray(1, demoData.taijiData.line5)#[7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]
+        'color': 'transparent'
+        'lineColor': '#701a1d'
+      ,
+        'id': 'hideLine'
+        'name': 'hideLine'
+        'type': 'line'
+        'data': @parameters.hideLineData[0..@maxInOneScreen]#filterArray(0, demoData.taijiData.line1) #[7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]
+        'color': 'transparent'
+      ,
+        'id': 'guide'
+        'name': 'guide'
+        'type': 'flags'
+        'data': @parameters.guideData[0..@parameters.current]#filterArray(0, demoData.taijiData.line1)
+        'style':
+          width: 10
+          height: 10
+      ],
+
+      plotOptions: 
+        flags:
+          'animation': if animation? then animation else true
+          'style': display: 'none'
+        candlestick:
+          'color': '#3F3'
+          'lineColor': '#3F3'
+          'upColor': '#FF2D19'
+          'upLineColor': '#FF2D19'
+          'animation': if animation? then animation else true
+        area:
+          'stacking': 'normal'
+          'lineColor': '#666666'
+          'lineWidth': 1
+          'marker':
+            lineWidth: 1
+            lineColor: '#666666'
+          'enableMouseTracking': false
+          'animation': if animation? then animation else true
+        series:
+          'fillOpacity': 0.1
+          'threshold': null 
+          'animation': if animation? then animation else true
+
+    taijiChart = new Highcharts.Chart(option)
+
+playGamePage = 
+  page: $('.js-taiji-line')
+  chartContainer: $('.js-taiji-line .container')
+  init: ->
+    #Operation.reset()
+    {tradedate, limit, guideOperation} = Resource.gameSeries[Math.floor(Math.random() * Resource.gameSeries.length)]
+    DataCollections.getData {sid: 'TPME.XAGUSD', limit, tradedate}, (err, resultData )=>
+      if resultData is not null
+        closeData = resultData.map (item)-> [item[0] * 1, item[4] * 1]
+        taijiData = dataCollections.taiji(closeData)
+        guideData = dataCollections.taijiGuide(taijiData, guideOperation)
+        chart.init {resultData: resultData, taijiData: taijiData, guideData: guideData, renderTo: @chartContainer}
+        chart.renderPoints onEnd: ->
+          $('#buy-in, #sell-out, #close-buy, #close-sell').hide()
+          $('.play-game-tips').hide()
+          createView.navigatorTo 'taiji-complete-page'
+
+bugFix = 
+  need: null
+  repaint: ->
+    if @need
+      document.body.style.display = 'none'
+      setTimeout ->
+        document.body.style.display = ''
+      , 0
+
+createView = 
+  container: $('[current-view]')
+  navigatorTo: (view, data)->
+    @container.attr('current-view', view)
+    page = view.replace /-(\w)/g, (whole, x)-> x.toUpperCase()
+    exports[page].init(data)
+    do bugFix.repaint
 
 $('.js-no-tip').click(->
   document.cookie = 'name=' + window.encodeURI('true')
@@ -335,6 +367,10 @@ $('.js-no-tip').click(->
   # e = new Event 'showLine', true, false
   # window.dispatchEvent(e)
   window.showLineWithTime()
+)
+
+$('.formulas-btn1').click(->
+
 )
 
 $('.js-close-btn').click( ->
@@ -376,7 +412,8 @@ window.showLineWithTime = ->
       $('div.js-taiji-line').css('display', 'block')
       $('body').removeClass('bodyColor')
       clearInterval(yui)
-      taijiChart = new Highcharts.Chart(option)
+      ############taijiChart = new Highcharts.Chart(option)
+      playGamePage.init()
     else 
       $('.count-down' + (j+1)).css('display', 'none')
       $('.count-down' + j).css('display', 'block')
