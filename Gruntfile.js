@@ -180,6 +180,7 @@ module.exports = function (grunt) {
       }
     },
 
+
     // Automatically inject Bower components into the HTML file
     wiredep: {
       app: {

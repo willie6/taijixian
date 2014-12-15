@@ -1,0 +1,557 @@
+html,
+body {
+  font-family: -apple-system-font, "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+html,
+body,
+div,
+p,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+input,
+select,
+button,
+textarea,
+iframe,
+table,
+th,
+td,
+img,
+a {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+img {
+  border: 0 none;
+  vertical-align: top;
+}
+body {
+  -webkit-backface-visibility: hidden;
+  -webkit-touch-callout: none;
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  text-size-adjust: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-overflow-scrolling: touch;
+  -webkit-user-drag: none;
+  background-color: white;
+  color: #fff;
+  word-wrap: break-word;
+  background: #2c8fca;
+  background-size: 100% auto;
+  margin: 0;
+  padding: 0;
+  line-height: 1.42857;
+}
+.wrap {
+  max-width: 6.4rem;
+  min-width: 2.4rem;
+  margin: 0 auto;
+  position: relative;
+}
+.price img {
+  width: 100%;
+  display: block;
+}
+.index-bodybg {
+  background: url(../images/run-1.png) no-repeat center center;
+  background-size: 2.54rem auto;
+  height: 100%;
+}
+@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+  .entrypage-title {
+    background: url(../images/run-1.png) no-repeat center center;
+    background-size: 100% auto;
+  }
+  .entrypage-title2 {
+    background: url(../images/run-8.png) no-repeat center center;
+    background-size: 100% auto;
+  }
+}
+.entrypage-title {
+  background: url(../images/run-3.png) no-repeat center 0;
+  height: 0.32rem;
+  background-size: auto 0.32rem;
+  margin: 0.1rem auto;
+}
+/**/
+
+.wrapin {
+  padding: 0 0.1rem 0.1rem;
+}
+.GameOptions {
+  -webkit-border-radius: 0.15rem;
+  -moz-border-radius: 0.15rem;
+  border-radius: 0.15rem;
+  background-color: #1b1b1b;
+  -webkit-box-shadow: 0 0 0.07rem 0.01rem rgba(20, 151, 225, .75), inset 0 0 0.05rem rgba(4, 0, 0, .75);
+  -moz-box-shadow: 0 0 0.07rem 0.01rem rgba(20, 151, 225, .75), inset 0 0 0.05rem rgba(4, 0, 0, .75);
+  box-shadow: 0 0 0.07rem 0.01rem rgba(20, 151, 225, .75), inset 0 0 0.05rem rgba(4, 0, 0, .75);
+  border: solid 0.02rem #0b3a64;
+}
+.GameOptions .divtext {
+  display: table-cell;
+  color: #fff;
+  display: -webkit-box;
+  height: 100%;
+}
+.GameOptions .divtext .imgbg {
+  width: 0.36rem;
+  background: #05396d;
+  background: #05396d url(../images/run-4.png) no-repeat center center;
+  background-size: auto 0.62rem;
+  min-height: 0.62rem;
+  border-radius: 0.15rem 0 0 0;
+  border-bottom: 0.01rem solid #002a54;
+  border-left: 0.01rem solid #125895;
+  border-top: 0.01rem solid #125895;
+}
+.GameOptions .divtext .imgbg2n {
+  border-bottom: 0;
+  border-top: 0.01rem solid #044d94;
+  border-radius: 0 0 0 0.15rem;
+  background: #05396d url(../images/run-5.png) no-repeat center center;
+  background-size: auto 0.62rem;
+  border-radius: 0 0 0 0.15rem;
+  border-left: 0.01rem solid #125895;
+  border-bottom: 0.01rem solid #125895;
+  padding-bottom: 0.22rem;
+}
+.GameOptions .divtext .righttext {
+  -webkit-box-flex: 1;
+  padding: 0.1rem 0.15rem;
+  border-bottom: 0.01rem solid #0e0e0e;
+  font-size: 0.009rem;
+  border-radius: 0 0.15rem 0 0.15rem;
+  border-right: 0.01rem solid #125895;
+  border-top: 0.01rem solid #125895;
+}
+.GameOptions .divtext .righttext2 {
+  border-bottom: 0;
+  border-top: 0.01rem solid #2c2c2c;
+  font-family: microsoft yahei;
+  border-radius: 0 0 0.15rem 0;
+  border-right: 0.01rem solid #125895;
+  border-bottom: 0.01rem solid #125895;
+  padding-bottom: 0.22rem;
+}
+.GameOptions .divtext .righttext2 span {
+  color: #f9eb07;
+}
+.GameOptions .divtext .righttext2 p {
+  font-size: 0.007rem;
+  padding-top: 0.05rem;
+  font-family: -apple-system-font, "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+}
+.GameOptions .divtext .img2 {
+  background: url(../images/run-5.png) no-repeat center center;
+  background-size: auto 0.62rem;
+  min-height: 0.62rem;
+  display: block;
+  margin-top: 0.06rem;
+}
+/*一*/
+
+.GameOptions .divtext .img1 {
+  background: url(../images/run-4.png) no-repeat center center;
+  background-size: auto 0.62rem;
+  min-height: 0.62rem;
+  display: block;
+  margin-top: 0.6rem;
+}
+.GameOptions-bottombg {
+  background: url(../images/run-2.png) no-repeat center 0;
+  background-size: auto 0.72rem;
+  min-height: 0.8rem;
+  position: relative;
+  margin-top: -0.17rem;
+}
+.PlayGame {
+  background: url(../images/run-7.png) no-repeat;
+  background-size: auto 0.85rem;
+  min-height: 0.85rem;
+  width: 100%;
+  border: 0;
+}
+.PlayGame-click {
+  background: url(../images/run-6.png) no-repeat;
+  background-size: auto 0.85rem;
+}
+.entrypage-title2 {
+  background: url(../images/run-8.png) no-repeat center 0;
+  height: 0.32rem;
+  background-size: auto 0.32rem;
+  margin: 0.1rem auto;
+}
+.entrypage-tablediv {
+  border-radius: 0.08rem 0.08rem;
+}
+.entrypage-table {
+  width: 100%;
+  border: 0.01rem solid #0b3b65;
+  text-align: center;
+  border-radius: 0.08rem;
+  border-collapse: collapse;
+}
+.entrypage-table td {
+  background: url(../images/run-9.png) repeat-x;
+  border: 0.01rem solid #282221;
+  padding: 0.05rem;
+  font-size: 0.008rem;
+  color: #fff;
+}
+.entrypage-table td:nth-child(odd) {
+  color: #f9eb07;
+}
+.entrypage-table th {
+  color: #00ff90;
+  background: #004181;
+  padding: 0.05rem;
+  font-size: 0.009rem;
+  border: 0.01rem solid #002a54;
+}
+/*口诀*/
+
+.formulas-earnings {
+  background: url(../images/run-11.png) no-repeat 0 center;
+  background-size: 100% 0.28rem;
+  width: 100%;
+  min-height: 0.28rem;
+  text-align: center;
+  font-family: microsoft yahei;
+  padding-bottom: 0.1rem;
+}
+.formulas-earnings span {
+  color: #00ff90;
+}
+.formulas-hint {
+  text-align: center;
+  font-family: microsoft yahei;
+  padding: 0.25rem 0;
+}
+.formulas-hint p {
+  font-family: 0.013rem;
+  padding-bottom: 0.15rem;
+}
+.color-red {
+  color: #f72427;
+}
+.color-green {
+  color: #00ff90;
+}
+.color-yellow {
+  color: #ffea00;
+}
+.hint-btns,
+.hint-btns02 {
+  -webkit-border-radius: 0.15rem;
+  -moz-border-radius: 0.15rem;
+  border-radius: 15rem;
+  background-color: #f00;
+  -webkit-box-shadow: 0 0.03rem #730000;
+  -moz-box-shadow: 0 0.03rem #730000;
+  box-shadow: 0 0.03rem #730000;
+  font-size: 0.012rem;
+  color: #fff;
+  padding: 0.07rem 0.14rem;
+  text-decoration: none;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+}
+.hint-btns02 {
+  width: auto;
+}
+.colose-btns {
+  -webkit-border-radius: 0.15rem;
+  -moz-border-radius: 0.15rem;
+  border-radius: 0.15rem;
+  background-color: #2584c3;
+  -webkit-box-shadow: 0 0.03rem #00375b;
+  -moz-box-shadow: 0 0.03rem #00375b;
+  box-shadow: 0 0.03rem #00375b;
+  font-size: 0.012rem;
+  color: #fff;
+  text-align: center;
+  display: block;
+  width: 100%;
+  padding: 0.07rem 0.14rem;
+  text-decoration: none;
+}
+.hint-colose {
+  display: -webkit-box;
+  padding-bottom: 0.5rem;
+}
+.hint-colose .p-hint {
+  -webkit-flex: 1;
+  width: 50%;
+}
+.pr-15 {
+  padding-right: 0.15rem;
+}
+.pl-15 {
+  padding-left: 0.15rem;
+}
+.formulas-bottoms {
+  background: url(../images/run-10.png) no-repeat 0 center;
+  background-size: 100% 0.73rem;
+  width: 100%;
+  min-height: 0.73rem;
+  margin-top: -0.25rem;
+  position: relative;
+}
+.pt-30 {
+  padding-top: 0.3rem;
+}
+.formulas-btn1 {
+  background: url(../images/run-12.png) no-repeat;
+  background-size: 100% 0.54rem;
+  min-height: 0.54rem;
+  width: 1.37rem;
+  display: inline-block;
+  overflow: hidden;
+  text-indent: -9.99em;
+}
+.formulas-btn1click {
+  background: url(../images/run-13.png) no-repeat;
+  background-size: 100% 0.54rem;
+  min-height: 0.54rem;
+  width: 1.37rem;
+  display: inline-block;
+  overflow: hidden;
+  text-indent: -9.99em;
+}
+.formulas-btn2 {
+  background: url(../images/run-16.png) no-repeat;
+  background-size: 100% 0.54rem;
+  min-height: 0.54rem;
+  width: 1.37rem;
+  display: inline-block;
+  overflow: hidden;
+  text-indent: -9.99em;
+  margin-left: 0.2rem;
+}
+.formulas-btn2click {
+  background: url(../images/run-17.png) no-repeat;
+  background-size: 100% 0.54rem;
+  min-height: 0.54rem;
+  width: 1.37rem;
+  display: inline-block;
+  overflow: hidden;
+  text-indent: -9.99em;
+  margin-left: 0.2rem;
+}
+.formulas-btn3 {
+  background: url(../images/run-14.png) no-repeat;
+  background-size: 100% 0.54rem;
+  min-height: 0.54rem;
+  width: 1.37rem;
+  display: inline-block;
+  overflow: hidden;
+  text-indent: -9.99em;
+}
+.formulas-btn3click {
+  background: url(../images/run-15.png) no-repeat;
+  background-size: 100% 0.54rem;
+  min-height: 0.54rem;
+  width: 1.37rem;
+  display: inline-block;
+  overflow: hidden;
+  text-indent: -9.99em;
+}
+.formulas-btn4 {
+  background: url(../images/run-18.png) no-repeat;
+  background-size: 100% 0.54rem;
+  min-height: 0.54rem;
+  width: 1.37rem;
+  display: inline-block;
+  overflow: hidden;
+  text-indent: -9.99em;
+  margin-left: 0.2rem;
+}
+.formulas-btn4click {
+  background: url(../images/run-19.png) no-repeat;
+  background-size: 100% 0.54rem;
+  min-height: 0.54rem;
+  width: 1.37rem;
+  display: inline-block;
+  overflow: hidden;
+  text-indent: -9.99em;
+  margin-left: 0.2rem;
+}
+.pt-20 {
+  padding-top: 0.2rem;
+}
+/*倒计时*/
+
+.count-down {
+  background: url(../images/run-20.png) no-repeat center 0;
+  background-size: 100% 0.8rem;
+  min-height: 0.8rem;
+  margin: 0.25rem 0;
+}
+.count-downgo {
+  background: url(../images/run-21.png) no-repeat center 0;
+  background-size: 1.61rem 1.61rem;
+  min-height: 1.61rem;
+}
+.count-down3 {
+  background: url(../images/run-22.png) no-repeat center 0;
+  background-size: 1.61rem 1.61rem;
+  min-height: 1.61rem;
+}
+.count-down2 {
+  background: url(../images/run-23.png) no-repeat center 0;
+  background-size: 1.61rem 1.61rem;
+  min-height: 1.61rem;
+}
+.count-down1 {
+  background: url(../images/run-24.png) no-repeat center 0;
+  background-size: 1.61rem 1.61rem;
+  min-height: 1.61rem;
+}
+.fn12 {
+  font-size: 0.012rem;
+}
+.fn11 {
+  font-size: 0.011rem;
+}
+.fn07 {
+  font-size: 0.007rem;
+}
+.pt-5 {
+  padding-top: 0.05rem;
+}
+.textcenter {
+  text-align: center;
+}
+.pt-15 {
+  padding-top: 0.15rem;
+}
+/*游戏结束*/
+
+.GameOver-text {
+  font-size: 0.008rem;
+  color: #121116;
+  text-align: center;
+}
+.GameOver-btn1 {
+  background: url(../images/run-34.png) no-repeat;
+  background-size: 100% 0.59rem;
+  min-height: 0.59rem;
+  text-indent: -9.99em;
+  width: 100%;
+  display: block;
+}
+.GameOver-btn1click {
+  background: url(../images/run-33.png) no-repeat;
+  background-size: 100% 0.59rem;
+  min-height: 0.59rem;
+  text-indent: -9.99em;
+  width: 100%;
+  display: block;
+}
+.GameOver-btn2 {
+  background: url(../images/run-32.png) no-repeat;
+  background-size: 100% 0.59rem;
+  min-height: 0.59rem;
+  text-indent: -9.99em;
+  width: 100%;
+  display: block;
+}
+.fn13 {
+  font-size: 0.013rem;
+  font-family: microsoft yahei;
+}
+.immediately-hint {
+  text-align: center;
+  font-family: microsoft yahei;
+  padding: 0.25rem 0;
+}
+.immediately-table {
+  width: 100%;
+}
+.immediately-table td {
+  padding: 0.05rem;
+  text-align: left;
+}
+.immediately-table .lefttext {
+  font-size: 0.0075rem;
+  text-align: right;
+  width: 40%;
+}
+.immediately-table .input-width {
+  width: 100%;
+  background: #c9c9c9;
+  border-radius: 0.06rem;
+  padding: 0.04rem;
+}
+/**/
+
+.immediately-table .input-width02 {
+  width: 50%;
+  background: #c9c9c9;
+  border-radius: 0.06rem;
+  padding: 0.04rem;
+}
+.immediately-table .code-span {
+  font-size: 0.007rem;
+  background: #00ff90;
+  color: #000;
+  border-radius: 0.06rem;
+  padding: 0.04rem;
+  margin-left: 0.1rem;
+}
+.hint-colose2 {
+  display: -webkit-box;
+}
+.hint-colose2 .p-hint {
+  -webkit-flex: 1;
+  width: 50%;
+}
+.flaunt-btns {
+  -webkit-border-radius: 0.15rem;
+  -moz-border-radius: 0.15rem;
+  border-radius: 0.15rem;
+  background-color: #00ff90;
+  -webkit-box-shadow: 0 0.6rem #027845;
+  -moz-box-shadow: 0 0.6rem #027845;
+  box-shadow: 0 0.6rem #027845;
+  font-size: 0.012rem;
+  color: #fff;
+  text-align: center;
+  display: block;
+  width: 100%;
+  padding: 0.07rem 0.14rem;
+  text-decoration: none;
+}
